@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<PhoronixTestSuite>
+	<Options>
+    	<Testing>
+    		<ResultsDirectory>/mnt/output</ResultsDirectory>
+    	</Testing>
+    	<BatchMode>
+    		<SaveResults>TRUE</SaveResults>
+    		<OpenBrowser>FALSE</OpenBrowser>
+    		<UploadResults>FALSE</UploadResults>
+    		<PromptForTestIdentifier>FALSE</PromptForTestIdentifier>
+    		<PromptForTestDescription>FALSE</PromptForTestDescription>
+    		<PromptSaveName>FALSE</PromptSaveName>
+    		<RunAllTestCombinations>TRUE</RunAllTestCombinations>
+    		<Configured>TRUE</Configured>
+    	</BatchMode>
+	</Options>
+</PhoronixTestSuite>
