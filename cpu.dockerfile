@@ -1,4 +1,4 @@
-FROM debian:bookworm
+FROM debian:bookworm-slim
 
 # Set the working directory
 WORKDIR /home
@@ -24,6 +24,6 @@ RUN wget https://github.com/phoronix-test-suite/phoronix-test-suite/archive/refs
 # Install the phoronix-test-suite for 7zip
 RUN phoronix-test-suite/phoronix-test-suite batch-install compress-7zip
 
-COPY ./cpu-user-config.xml /etc/phoronix-test-suite.xml
+COPY ./user-config.xml /etc/phoronix-test-suite.xml
 
 CMD ["phoronix-test-suite/phoronix-test-suite", "batch-benchmark", "compress-7zip"]

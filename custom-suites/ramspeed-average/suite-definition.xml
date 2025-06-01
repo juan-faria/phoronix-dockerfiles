@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <SuiteInformation>
+    <Title>ramspeed-average</Title>
+    <Version>1.0.0</Version>
+    <TestType>Memory</TestType>
+    <Description>RAMspeedtest selecting only average test.</Description>
+    <Maintainer>juan_acf</Maintainer>
+  </SuiteInformation>
+  <Execute>
+    <Test>pts/ramspeed-1.4.3</Test>
+    <Arguments>AVERAGE -b 3</Arguments>
+    <Description>Type: Average - Benchmark: Integer</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/ramspeed-1.4.3</Test>
+    <Arguments>AVERAGE -b 6</Arguments>
+    <Description>Type: Average - Benchmark: Floating Point</Description>
+  </Execute>
+</PhoronixTestSuite>
