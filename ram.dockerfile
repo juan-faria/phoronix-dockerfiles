@@ -7,6 +7,8 @@ RUN useradd -ms /bin/bash phoronix && \
 
 WORKDIR /app
 
+ENV OUTPUT_DIR=/mnt/output
+
 # Create the output directory
 RUN mkdir -p $OUTPUT_DIR
 
