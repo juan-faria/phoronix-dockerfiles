@@ -7,8 +7,6 @@ RUN useradd -ms /bin/bash phoronix && \
 
 WORKDIR /app
 
-ENV OUTPUT_DIR=/mnt/output
-
 # Create the output directory
 RUN mkdir -p $OUTPUT_DIR
 
@@ -29,8 +27,9 @@ RUN wget https://github.com/phoronix-test-suite/phoronix-test-suite/archive/refs
     cd .. && \
     rm -rf phoronix-test-suite
 
-
 USER phoronix
+
+ENV OUTPUT_DIR=/mnt/output
 
 # Install the phoronix-test-suite for ramspeed
 RUN phoronix-test-suite batch-install ramspeed
