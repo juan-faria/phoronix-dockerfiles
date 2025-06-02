@@ -3,14 +3,11 @@ FROM debian:bookworm-slim
 # create a non-root user
 RUN useradd -ms /bin/bash phoronix && \
     mkdir /app && \
-    chown phoronix /app
+    mkdir /mnt/output && \
+    chown phoronix /app && \
+    chown phoronix /mnt/output
 
 WORKDIR /app
-
-ENV OUTPUT_DIR=/mnt/output
-
-# Create the output directory
-RUN mkdir -p $OUTPUT_DIR
 
 # Install phoronix-test-suite dependencies
 RUN apt-get update && \
@@ -28,6 +25,8 @@ RUN wget https://github.com/phoronix-test-suite/phoronix-test-suite/archive/refs
     ./install-sh && \
     cd .. && \
     rm -rf phoronix-test-suite
+
+COPY ./user-config.xml /etc/phoronix-test-suite.xml
 
 USER phoronix
 
