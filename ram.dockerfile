@@ -1,13 +1,12 @@
 FROM debian:bookworm-slim
 
-# create a non-root user
-RUN useradd -ms /bin/bash phoronix && \
-    mkdir /app && \
-    mkdir /mnt/output && \
-    chown phoronix /app && \
-    chown phoronix /mnt/output
+# Set the working directory
+WORKDIR /home
 
-WORKDIR /app
+ENV OUTPUT_DIR=/mnt/output
+
+# Create the output directory
+RUN mkdir -p $OUTPUT_DIR
 
 # Install phoronix-test-suite dependencies
 RUN apt-get update && \
@@ -28,15 +27,9 @@ RUN wget https://github.com/phoronix-test-suite/phoronix-test-suite/archive/refs
 
 COPY ./user-config.xml /etc/phoronix-test-suite.xml
 
-USER phoronix
-
-ENV OUTPUT_DIR=/mnt/output
-
 # Install the phoronix-test-suite for ramspeed
 RUN phoronix-test-suite batch-install ramspeed
 
-COPY ./user-config.xml /home/phoronix/.phoronix-test-suite/user-config.xml
-
-COPY ./custom-suites /home/phoronix/.phoronix-test-suite/test-suites/local
+COPY ./custom-suites /var/lib/phoronix-test-suite/test-suites/local
 
 CMD ["phoronix-test-suite", "batch-benchmark", "ramspeed-average"]

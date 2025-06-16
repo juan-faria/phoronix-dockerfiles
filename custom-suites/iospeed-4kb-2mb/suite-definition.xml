@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <SuiteInformation>
+    <Title>iospeed-4kb-2mb</Title>
+    <Version>1.0.0</Version>
+    <TestType>Disk</TestType>
+    <Description>IO speed test using only 4kb and 2mb samples reading and writing 512Mb.</Description>
+    <Maintainer>juan_acf</Maintainer>
+  </SuiteInformation>
+  <Execute>
+    <Test>pts/iozone-1.9.6</Test>
+    <Arguments>-r 4k -s 512M -i0 #WRITE</Arguments>
+    <Description>Record Size: 4Kb - File Size: 512MB - Disk Test: Write Performance</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/iozone-1.9.6</Test>
+    <Arguments>-r 4k -s 512M -i0 -i1 #READ</Arguments>
+    <Description>Record Size: 4Kb - File Size: 512MB - Disk Test: Read Performance</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/iozone-1.9.6</Test>
+    <Arguments>-r 2m -s 512M -i0 #WRITE</Arguments>
+    <Description>Record Size: 2MB - File Size: 512MB - Disk Test: Write Performance</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/iozone-1.9.6</Test>
+    <Arguments>-r 2m -s 512M -i0 -i1 #READ</Arguments>
+    <Description>Record Size: 2MB - File Size: 512MB - Disk Test: Read Performance</Description>
+  </Execute>
+</PhoronixTestSuite>
