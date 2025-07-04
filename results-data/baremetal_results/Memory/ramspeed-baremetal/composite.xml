@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>ramspeed-baremetal</Title>
+    <LastModified>2025-05-31 21:58:27</LastModified>
+    <TestClient>Phoronix Test Suite v10.8.4</TestClient>
+    <Description>ARMv8 Cortex-A72 testing with a Raspberry Pi 4 Model B Rev 1.5 and BCM2708 on Debian 12 via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>Baremetal ramspeed</Identifier>
+    <Hardware>Processor: ARMv8 Cortex-A72 @ 1.80GHz (4 Cores), Motherboard: Raspberry Pi 4 Model B Rev 1.5, Chipset: Broadcom BCM2711, Memory: 4096MB, Disk: 64GB SC64G, Graphics: BCM2708</Hardware>
+    <Software>OS: Debian 12, Kernel: 6.12.20+rpt-rpi-v8 (aarch64), Compiler: GCC 12.2.0, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>pi</User>
+    <TimeStamp>2025-05-31 20:20:48</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=aarch64-linux-gnu --disable-libquadmath --disable-libquadmath-support --disable-werror --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-fix-cortex-a53-843419 --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --enable-libphobos-checking=release --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-nls --enable-objc-gc=auto --enable-plugin --enable-shared --enable-threads=posix --host=aarch64-linux-gnu --program-prefix=aarch64-linux-gnu- --target=aarch64-linux-gnu --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-target-system-zlib=auto -v","cpu-scaling-governor":"cpufreq-dt ondemand","kernel-parameters":"snd_bcm2835.enable_headphones=0 snd_bcm2835.enable_headphones=1 snd_bcm2835.enable_hdmi=1 cfg80211.ieee80211_regdom=GB","security":"gather_data_sampling: Not affected + itlb_multihit: Not affected + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Not affected + reg_file_data_sampling: Not affected + retbleed: Not affected + spec_rstack_overflow: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of __user pointer sanitization + spectre_v2: Vulnerable + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/ramspeed-1.4.3</Identifier>
+    <Title>RAMspeed SMP</Title>
+    <AppVersion>3.5.0</AppVersion>
+    <Arguments>AVERAGE -b 3</Arguments>
+    <Description>Type: Average - Benchmark: Integer</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Baremetal ramspeed</Identifier>
+        <Value>3866.62</Value>
+        <RawString>3856.65:3962.46:3780.75</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"497.37:497.65:495.57"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ramspeed-1.4.3</Identifier>
+    <Title>RAMspeed SMP</Title>
+    <AppVersion>3.5.0</AppVersion>
+    <Arguments>AVERAGE -b 6</Arguments>
+    <Description>Type: Average - Benchmark: Floating Point</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Baremetal ramspeed</Identifier>
+        <Value>3912.45</Value>
+        <RawString>3828.29:4202.52:3972.3:3837.31:3895.59:3944.39:3980.2:3771.82:3779.66</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"480.68:472.66:478.03:479.93:476.76:476.87:476.89:485.28:482.74"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

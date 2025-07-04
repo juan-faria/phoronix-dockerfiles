@@ -1,0 +1,20 @@
+retest-baremetal
+ARMv8 Cortex-A72 testing with a Raspberry Pi 4 Model B Rev 1.5 and BCM2708 on Debian 12 via the Phoronix Test Suite.
+
+ ,,"retesting the baremetal"
+Processor,,ARMv8 Cortex-A72 @ 1.80GHz (4 Cores)
+Motherboard,,Raspberry Pi 4 Model B Rev 1.5
+Chipset,,Broadcom BCM2711
+Memory,,4096MB
+Disk,,64GB SC64G
+Graphics,,BCM2708
+OS,,Debian 12
+Kernel,,6.12.20+rpt-rpi-v8 (aarch64)
+Compiler,,GCC 12.2.0
+File-System,,ext4
+Screen Resolution,,1920x1080
+
+ ,,"retesting the baremetal"
+"7-Zip Compression - Test: Compression Rating (MIPS)",HIB,4704
+"7-Zip Compression - Test: Decompression Rating (MIPS)",HIB,7586
+

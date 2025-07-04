@@ -1,0 +1,977 @@
+
+Building iozone for Linux
+
+cc -Wmissing-prototypes -Wall -c -O3 -Dunix -DHAVE_ANSIC_C -DASYNC_IO -DHAVE_PREAD \
+	-DSHARED_MEM -Dlinux -D_LARGEFILE64_SOURCE -fcommon iozone.c \
+	-DNAME='"linux"' -o iozone_linux.o
+iozone.c: In function 'main':
+iozone.c:1814:13: warning: variable 'anwser' set but not used [-Wunused-but-set-variable]
+ 1814 |         int anwser,bind_cpu;
+      |             ^~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:3827:14: warning: variable 'getout' set but not used [-Wunused-but-set-variable]
+ 3827 |         char getout;
+      |              ^~~~~~
+iozone.c: In function 'time_so_far':
+iozone.c:7195:6: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+ 7195 |      if (pit_gettimeofday(&tp, (struct timezone *) NULL, pit_hostname, pit_service) == -1)
+      |      ^~
+iozone.c:7197:10: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+ 7197 |          return ((double) (tp.tv_sec)) + (((double) tp.tv_usec) * 0.000001 );
+      |          ^~~~~~
+iozone.c:7201:6: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+ 7201 |      if (gettimeofday(&tp, (struct timezone *) NULL) == -1)
+      |      ^~
+iozone.c:7203:10: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+ 7203 |          return ((double) (tp.tv_sec)) + (((double) tp.tv_usec) * 0.000001 );
+      |          ^~~~~~
+iozone.c: In function 'fetchit':
+iozone.c:7227:28: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+ 7227 |         volatile long long x[4];
+      |                            ^
+iozone.c: In function 'verify_buffer':
+iozone.c:7316:33: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+ 7316 |                                 if(!silent)
+      |                                 ^~
+iozone.c:7323:36: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+ 7323 |                                    printf("Found %.lx Expecting %.lx \n",de_ibuf[i], de_obuf[i]);
+      |                                    ^~~~~~
+iozone.c:7275:23: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+ 7275 |         unsigned long x;
+      |                       ^
+iozone.c:7266:37: warning: variable 'dummy' set but not used [-Wunused-but-set-variable]
+ 7266 |         volatile unsigned long long dummy;
+      |                                     ^~~~~
+iozone.c: In function 'fill_buffer':
+iozone.c:7443:23: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+ 7443 |         unsigned long x;
+      |                       ^
+iozone.c: In function 'purgeit':
+iozone.c:7527:28: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+ 7527 |         VOLATILE long long x[200];
+      |                            ^
+iozone.c: In function 'write_perf_test':
+iozone.c:7613:13: warning: variable 'test_foo' set but not used [-Wunused-but-set-variable]
+ 7613 |         int test_foo;
+      |             ^~~~~~~~
+iozone.c: In function 'read_perf_test':
+iozone.c:8652:13: warning: variable 'test_foo' set but not used [-Wunused-but-set-variable]
+ 8652 |         int test_foo,ltest;
+      |             ^~~~~~~~
+iozone.c: In function 'alloc_mem':
+iozone.c:12416:19: warning: variable 'tmp' set but not used [-Wunused-but-set-variable]
+12416 |         long long tmp;
+      |                   ^~~
+iozone.c:12415:13: warning: variable 'tfd' set but not used [-Wunused-but-set-variable]
+12415 |         int tfd;
+      |             ^~~
+iozone.c:12413:21: warning: variable 'dumb' set but not used [-Wunused-but-set-variable]
+12413 |         char *addr,*dumb;
+      |                     ^~~~
+iozone.c: In function 'purge_buffer_cache':
+iozone.c:12684:15: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+12684 |               if (ret == 0)
+      |               ^~
+iozone.c:12686:20: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+12686 |                    sleep(i); /* seconds */
+      |                    ^~~~~
+iozone.c: In function 'thread_write_test':
+iozone.c:12729:13: warning: variable 'anwser' set but not used [-Wunused-but-set-variable]
+12729 |         int anwser,bind_cpu,wval;
+      |             ^~~~~~
+iozone.c: In function 'thread_pwrite_test':
+iozone.c:13444:13: warning: variable 'anwser' set but not used [-Wunused-but-set-variable]
+13444 |         int anwser,bind_cpu,wval;
+      |             ^~~~~~
+iozone.c: In function 'thread_rwrite_test':
+iozone.c:14084:13: warning: variable 'anwser' set but not used [-Wunused-but-set-variable]
+14084 |         int anwser,bind_cpu,wval;
+      |             ^~~~~~
+iozone.c:14078:17: warning: variable 'written_so_far' set but not used [-Wunused-but-set-variable]
+14078 |         off64_t written_so_far, read_so_far, re_written_so_far,re_read_so_far=0;
+      |                 ^~~~~~~~~~~~~~
+iozone.c:14076:19: warning: variable 'recs_per_buffer' set but not used [-Wunused-but-set-variable]
+14076 |         long long recs_per_buffer,traj_size;
+      |                   ^~~~~~~~~~~~~~~
+iozone.c: In function 'thread_read_test':
+iozone.c:14686:13: warning: variable 'anwser' set but not used [-Wunused-but-set-variable]
+14686 |         int anwser,bind_cpu;
+      |             ^~~~~~
+iozone.c:14677:19: warning: variable 'recs_per_buffer' set but not used [-Wunused-but-set-variable]
+14677 |         long long recs_per_buffer,traj_size;
+      |                   ^~~~~~~~~~~~~~~
+iozone.c:14676:17: warning: variable 'written_so_far' set but not used [-Wunused-but-set-variable]
+14676 |         off64_t written_so_far, read_so_far, re_written_so_far,re_read_so_far;
+      |                 ^~~~~~~~~~~~~~
+iozone.c: In function 'thread_pread_test':
+iozone.c:15274:13: warning: variable 'anwser' set but not used [-Wunused-but-set-variable]
+15274 |         int anwser,bind_cpu;
+      |             ^~~~~~
+iozone.c:15265:19: warning: variable 'recs_per_buffer' set but not used [-Wunused-but-set-variable]
+15265 |         long long recs_per_buffer,traj_size;
+      |                   ^~~~~~~~~~~~~~~
+iozone.c:15264:17: warning: variable 'written_so_far' set but not used [-Wunused-but-set-variable]
+15264 |         off64_t written_so_far, read_so_far, re_written_so_far,re_read_so_far;
+      |                 ^~~~~~~~~~~~~~
+iozone.c: In function 'thread_rread_test':
+iozone.c:15800:13: warning: variable 'anwser' set but not used [-Wunused-but-set-variable]
+15800 |         int anwser,bind_cpu;
+      |             ^~~~~~
+iozone.c:15793:17: warning: variable 'written_so_far' set but not used [-Wunused-but-set-variable]
+15793 |         off64_t written_so_far, read_so_far, re_written_so_far,
+      |                 ^~~~~~~~~~~~~~
+iozone.c:15791:19: warning: variable 'recs_per_buffer' set but not used [-Wunused-but-set-variable]
+15791 |         long long recs_per_buffer,traj_size;
+      |                   ^~~~~~~~~~~~~~~
+iozone.c: In function 'thread_reverse_read_test':
+iozone.c:16377:13: warning: variable 'anwser' set but not used [-Wunused-but-set-variable]
+16377 |         int anwser,bind_cpu;
+      |             ^~~~~~
+iozone.c:16371:17: warning: variable 'written_so_far' set but not used [-Wunused-but-set-variable]
+16371 |         off64_t written_so_far, reverse_read, re_read_so_far,read_so_far;
+      |                 ^~~~~~~~~~~~~~
+iozone.c:16367:19: warning: variable 'recs_per_buffer' set but not used [-Wunused-but-set-variable]
+16367 |         long long recs_per_buffer;
+      |                   ^~~~~~~~~~~~~~~
+iozone.c: In function 'thread_stride_read_test':
+iozone.c:16912:13: warning: variable 'anwser' set but not used [-Wunused-but-set-variable]
+16912 |         int anwser,bind_cpu;
+      |             ^~~~~~
+iozone.c:16905:17: warning: variable 'written_so_far' set but not used [-Wunused-but-set-variable]
+16905 |         off64_t written_so_far, stride_read,re_read_so_far,read_so_far;
+      |                 ^~~~~~~~~~~~~~
+iozone.c:16901:19: warning: variable 'recs_per_buffer' set but not used [-Wunused-but-set-variable]
+16901 |         long long recs_per_buffer;
+      |                   ^~~~~~~~~~~~~~~
+iozone.c: In function 'thread_ranread_test':
+iozone.c:17525:13: warning: variable 'anwser' set but not used [-Wunused-but-set-variable]
+17525 |         int anwser,bind_cpu;
+      |             ^~~~~~
+iozone.c:17517:19: warning: variable 'recs_per_buffer' set but not used [-Wunused-but-set-variable]
+17517 |         long long recs_per_buffer;
+      |                   ^~~~~~~~~~~~~~~
+iozone.c:17516:17: warning: variable 'written_so_far' set but not used [-Wunused-but-set-variable]
+17516 |         off64_t written_so_far, ranread_so_far, re_written_so_far,re_read_so_far;
+      |                 ^~~~~~~~~~~~~~
+iozone.c: In function 'thread_ranwrite_test':
+iozone.c:18152:13: warning: variable 'anwser' set but not used [-Wunused-but-set-variable]
+18152 |         int anwser,bind_cpu,wval;
+      |             ^~~~~~
+iozone.c: In function 'dump_throughput_cpu':
+iozone.c:19091:15: warning: variable 'label' set but not used [-Wunused-but-set-variable]
+19091 |         char *label;
+      |               ^~~~~
+iozone.c: In function 'dump_throughput':
+iozone.c:19158:19: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+19158 |         long long x,y,i,j;
+      |                   ^
+iozone.c: In function 'r_traj_size':
+iozone.c:20205:13: warning: variable 'ret' set but not used [-Wunused-but-set-variable]
+20205 |         int ret;
+      |             ^~~
+iozone.c: In function 'w_traj_size':
+iozone.c:20304:13: warning: variable 'ret' set but not used [-Wunused-but-set-variable]
+20304 |         int ret;
+      |             ^~~
+iozone.c: In function 'start_child_listen':
+iozone.c:21248:13: warning: variable 'xx' set but not used [-Wunused-but-set-variable]
+21248 |         int xx;
+      |             ^~
+iozone.c:21245:13: warning: variable 'tsize' set but not used [-Wunused-but-set-variable]
+21245 |         int tsize;
+      |             ^~~~~
+iozone.c: In function 'start_child_listen_async':
+iozone.c:21428:13: warning: variable 'xx' set but not used [-Wunused-but-set-variable]
+21428 |         int xx;
+      |             ^~
+iozone.c:21425:13: warning: variable 'tsize' set but not used [-Wunused-but-set-variable]
+21425 |         int tsize;
+      |             ^~~~~
+iozone.c: In function 'start_child_listen_loop':
+iozone.c:22771:29: warning: variable 'child_stat' set but not used [-Wunused-but-set-variable]
+22771 |         struct child_stats *child_stat;
+      |                             ^~~~~~~~~~
+iozone.c: In function 'sp_start_child_listen':
+iozone.c:23579:13: warning: variable 'xx' set but not used [-Wunused-but-set-variable]
+23579 |         int xx;
+      |             ^~
+iozone.c:23575:13: warning: variable 'tsize' set but not used [-Wunused-but-set-variable]
+23575 |         int tsize;
+      |             ^~~~~
+iozone.c: In function 'sp_start_master_listen':
+iozone.c:23820:13: warning: variable 'xx' set but not used [-Wunused-but-set-variable]
+23820 |         int xx;
+      |             ^~
+iozone.c:23816:13: warning: variable 'tsize' set but not used [-Wunused-but-set-variable]
+23816 |         int tsize;
+      |             ^~~~~
+iozone.c: In function 'get_pattern':
+iozone.c:24071:22: warning: variable 'temp' set but not used [-Wunused-but-set-variable]
+24071 |         unsigned int temp;
+      |                      ^~~~
+iozone.c: In function 'thread_fwrite_test':
+iozone.c:24927:13: warning: variable 'anwser' set but not used [-Wunused-but-set-variable]
+24927 |         int anwser,bind_cpu,wval;
+      |             ^~~~~~
+iozone.c:24918:19: warning: variable 'recs_per_buffer' set but not used [-Wunused-but-set-variable]
+24918 |         long long recs_per_buffer;
+      |                   ^~~~~~~~~~~~~~~
+iozone.c:24911:15: warning: variable 'delay' set but not used [-Wunused-but-set-variable]
+24911 |         float delay = (float)0;
+      |               ^~~~~
+iozone.c: In function 'thread_fread_test':
+iozone.c:25399:13: warning: variable 'anwser' set but not used [-Wunused-but-set-variable]
+25399 |         int anwser,bind_cpu;
+      |             ^~~~~~
+iozone.c:25390:19: warning: variable 'recs_per_buffer' set but not used [-Wunused-but-set-variable]
+25390 |         long long recs_per_buffer;
+      |                   ^~~~~~~~~~~~~~~
+iozone.c:25383:15: warning: variable 'delay' set but not used [-Wunused-but-set-variable]
+25383 |         float delay = (float)0;
+      |               ^~~~~
+iozone.c: In function 'dump_throughput':
+iozone.c:19206:47: warning: '%15s' directive writing between 15 and 399 bytes into a region of size 300 [-Wformat-overflow=]
+19206 |                            sprintf(print_str,"%15s ",toutput[i]);
+      |                                               ^~~~
+iozone.c:19206:28: note: 'sprintf' output between 17 and 401 bytes into a destination of size 300
+19206 |                            sprintf(print_str,"%15s ",toutput[i]);
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'start_monitor':
+iozone.c:24168:47: warning: '&' directive writing 1 byte into a region of size between 0 and 255 [-Wformat-overflow=]
+24168 |                    sprintf(command_line,"%s %s&",imon_start,test);
+      |                                               ^
+In function 'start_monitor',
+    inlined from 'start_monitor' at iozone.c:24156:1:
+iozone.c:24168:20: note: 'sprintf' output 3 or more bytes (assuming 258) into a destination of size 256
+24168 |                    sprintf(command_line,"%s %s&",imon_start,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'start_monitor':
+iozone.c:24166:47: warning: 'sprintf' may write a terminating nul past the end of the destination [-Wformat-overflow=]
+24166 |                    sprintf(command_line,"%s %s",imon_start,test);
+      |                                               ^
+In function 'start_monitor',
+    inlined from 'start_monitor' at iozone.c:24156:1:
+iozone.c:24166:20: note: 'sprintf' output 2 or more bytes (assuming 257) into a destination of size 256
+24166 |                    sprintf(command_line,"%s %s",imon_start,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'stop_monitor':
+iozone.c:24186:47: warning: ' &' directive writing 2 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+24186 |                    sprintf(command_line,"%s %s &",imon_stop,test);
+      |                                               ^~
+In function 'stop_monitor',
+    inlined from 'stop_monitor' at iozone.c:24174:1:
+iozone.c:24186:20: note: 'sprintf' output 4 or more bytes (assuming 259) into a destination of size 256
+24186 |                    sprintf(command_line,"%s %s &",imon_stop,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'stop_monitor':
+iozone.c:24184:47: warning: 'sprintf' may write a terminating nul past the end of the destination [-Wformat-overflow=]
+24184 |                    sprintf(command_line,"%s %s",imon_stop,test);
+      |                                               ^
+In function 'stop_monitor',
+    inlined from 'stop_monitor' at iozone.c:24174:1:
+iozone.c:24184:20: note: 'sprintf' output 2 or more bytes (assuming 257) into a destination of size 256
+24184 |                    sprintf(command_line,"%s %s",imon_stop,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24168:45: warning: '%s' directive writing 5 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 3950 |                 start_monitor("Write");
+      |                               ~~~~~~~        
+......
+24168 |                    sprintf(command_line,"%s %s&",imon_start,test);
+      |                                             ^~
+In function 'start_monitor',
+    inlined from 'start_monitor' at iozone.c:24156:1,
+    inlined from 'throughput_test' at iozone.c:3950:3:
+iozone.c:24168:20: note: 'sprintf' output between 8 and 263 bytes into a destination of size 256
+24168 |                    sprintf(command_line,"%s %s&",imon_start,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24166:45: warning: '%s' directive writing 5 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 3950 |                 start_monitor("Write");
+      |                               ~~~~~~~        
+......
+24166 |                    sprintf(command_line,"%s %s",imon_start,test);
+      |                                             ^~
+In function 'start_monitor',
+    inlined from 'start_monitor' at iozone.c:24156:1,
+    inlined from 'throughput_test' at iozone.c:3950:3:
+iozone.c:24166:20: note: 'sprintf' output between 7 and 262 bytes into a destination of size 256
+24166 |                    sprintf(command_line,"%s %s",imon_start,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24186:45: warning: '%s' directive writing 5 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 4190 |                 stop_monitor("Write");
+      |                              ~~~~~~~         
+......
+24186 |                    sprintf(command_line,"%s %s &",imon_stop,test);
+      |                                             ^~
+In function 'stop_monitor',
+    inlined from 'stop_monitor' at iozone.c:24174:1,
+    inlined from 'throughput_test' at iozone.c:4190:3:
+iozone.c:24186:20: note: 'sprintf' output between 9 and 264 bytes into a destination of size 256
+24186 |                    sprintf(command_line,"%s %s &",imon_stop,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24184:45: warning: '%s' directive writing 5 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 4190 |                 stop_monitor("Write");
+      |                              ~~~~~~~         
+......
+24184 |                    sprintf(command_line,"%s %s",imon_stop,test);
+      |                                             ^~
+In function 'stop_monitor',
+    inlined from 'stop_monitor' at iozone.c:24174:1,
+    inlined from 'throughput_test' at iozone.c:4190:3:
+iozone.c:24184:20: note: 'sprintf' output between 7 and 262 bytes into a destination of size 256
+24184 |                    sprintf(command_line,"%s %s",imon_stop,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24168:45: warning: '%s' directive writing 7 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 4220 |                 start_monitor("Rewrite");
+      |                               ~~~~~~~~~      
+......
+24168 |                    sprintf(command_line,"%s %s&",imon_start,test);
+      |                                             ^~
+In function 'start_monitor',
+    inlined from 'start_monitor' at iozone.c:24156:1,
+    inlined from 'throughput_test' at iozone.c:4220:3:
+iozone.c:24168:20: note: 'sprintf' output between 10 and 265 bytes into a destination of size 256
+24168 |                    sprintf(command_line,"%s %s&",imon_start,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24166:45: warning: '%s' directive writing 7 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 4220 |                 start_monitor("Rewrite");
+      |                               ~~~~~~~~~      
+......
+24166 |                    sprintf(command_line,"%s %s",imon_start,test);
+      |                                             ^~
+In function 'start_monitor',
+    inlined from 'start_monitor' at iozone.c:24156:1,
+    inlined from 'throughput_test' at iozone.c:4220:3:
+iozone.c:24166:20: note: 'sprintf' output between 9 and 264 bytes into a destination of size 256
+24166 |                    sprintf(command_line,"%s %s",imon_start,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24186:45: warning: '%s' directive writing 7 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 4439 |                 stop_monitor("Rewrite");
+      |                              ~~~~~~~~~       
+......
+24186 |                    sprintf(command_line,"%s %s &",imon_stop,test);
+      |                                             ^~
+In function 'stop_monitor',
+    inlined from 'stop_monitor' at iozone.c:24174:1,
+    inlined from 'throughput_test' at iozone.c:4439:3:
+iozone.c:24186:20: note: 'sprintf' output between 11 and 266 bytes into a destination of size 256
+24186 |                    sprintf(command_line,"%s %s &",imon_stop,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24184:45: warning: '%s' directive writing 7 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 4439 |                 stop_monitor("Rewrite");
+      |                              ~~~~~~~~~       
+......
+24184 |                    sprintf(command_line,"%s %s",imon_stop,test);
+      |                                             ^~
+In function 'stop_monitor',
+    inlined from 'stop_monitor' at iozone.c:24174:1,
+    inlined from 'throughput_test' at iozone.c:4439:3:
+iozone.c:24184:20: note: 'sprintf' output between 9 and 264 bytes into a destination of size 256
+24184 |                    sprintf(command_line,"%s %s",imon_stop,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24168:45: warning: '%s' directive writing 4 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 4460 |                 start_monitor("Read");
+      |                               ~~~~~~         
+......
+24168 |                    sprintf(command_line,"%s %s&",imon_start,test);
+      |                                             ^~
+In function 'start_monitor',
+    inlined from 'start_monitor' at iozone.c:24156:1,
+    inlined from 'throughput_test' at iozone.c:4460:3:
+iozone.c:24168:20: note: 'sprintf' output between 7 and 262 bytes into a destination of size 256
+24168 |                    sprintf(command_line,"%s %s&",imon_start,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24166:45: warning: '%s' directive writing 4 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 4460 |                 start_monitor("Read");
+      |                               ~~~~~~         
+......
+24166 |                    sprintf(command_line,"%s %s",imon_start,test);
+      |                                             ^~
+In function 'start_monitor',
+    inlined from 'start_monitor' at iozone.c:24156:1,
+    inlined from 'throughput_test' at iozone.c:4460:3:
+iozone.c:24166:20: note: 'sprintf' output between 6 and 261 bytes into a destination of size 256
+24166 |                    sprintf(command_line,"%s %s",imon_start,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24186:45: warning: '%s' directive writing 4 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 4669 |                 stop_monitor("Read");
+      |                              ~~~~~~          
+......
+24186 |                    sprintf(command_line,"%s %s &",imon_stop,test);
+      |                                             ^~
+In function 'stop_monitor',
+    inlined from 'stop_monitor' at iozone.c:24174:1,
+    inlined from 'throughput_test' at iozone.c:4669:3:
+iozone.c:24186:20: note: 'sprintf' output between 8 and 263 bytes into a destination of size 256
+24186 |                    sprintf(command_line,"%s %s &",imon_stop,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24184:45: warning: '%s' directive writing 4 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 4669 |                 stop_monitor("Read");
+      |                              ~~~~~~          
+......
+24184 |                    sprintf(command_line,"%s %s",imon_stop,test);
+      |                                             ^~
+In function 'stop_monitor',
+    inlined from 'stop_monitor' at iozone.c:24174:1,
+    inlined from 'throughput_test' at iozone.c:4669:3:
+iozone.c:24184:20: note: 'sprintf' output between 6 and 261 bytes into a destination of size 256
+24184 |                    sprintf(command_line,"%s %s",imon_stop,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24168:45: warning: '%s' directive writing 6 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 4694 |                 start_monitor("Reread");
+      |                               ~~~~~~~~       
+......
+24168 |                    sprintf(command_line,"%s %s&",imon_start,test);
+      |                                             ^~
+In function 'start_monitor',
+    inlined from 'start_monitor' at iozone.c:24156:1,
+    inlined from 'throughput_test' at iozone.c:4694:3:
+iozone.c:24168:20: note: 'sprintf' output between 9 and 264 bytes into a destination of size 256
+24168 |                    sprintf(command_line,"%s %s&",imon_start,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24166:45: warning: '%s' directive writing 6 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 4694 |                 start_monitor("Reread");
+      |                               ~~~~~~~~       
+......
+24166 |                    sprintf(command_line,"%s %s",imon_start,test);
+      |                                             ^~
+In function 'start_monitor',
+    inlined from 'start_monitor' at iozone.c:24156:1,
+    inlined from 'throughput_test' at iozone.c:4694:3:
+iozone.c:24166:20: note: 'sprintf' output between 8 and 263 bytes into a destination of size 256
+24166 |                    sprintf(command_line,"%s %s",imon_start,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24186:45: warning: '%s' directive writing 6 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 4907 |                 stop_monitor("Reread");
+      |                              ~~~~~~~~        
+......
+24186 |                    sprintf(command_line,"%s %s &",imon_stop,test);
+      |                                             ^~
+In function 'stop_monitor',
+    inlined from 'stop_monitor' at iozone.c:24174:1,
+    inlined from 'throughput_test' at iozone.c:4907:3:
+iozone.c:24186:20: note: 'sprintf' output between 10 and 265 bytes into a destination of size 256
+24186 |                    sprintf(command_line,"%s %s &",imon_stop,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24184:45: warning: '%s' directive writing 6 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 4907 |                 stop_monitor("Reread");
+      |                              ~~~~~~~~        
+......
+24184 |                    sprintf(command_line,"%s %s",imon_stop,test);
+      |                                             ^~
+In function 'stop_monitor',
+    inlined from 'stop_monitor' at iozone.c:24174:1,
+    inlined from 'throughput_test' at iozone.c:4907:3:
+iozone.c:24184:20: note: 'sprintf' output between 8 and 263 bytes into a destination of size 256
+24184 |                    sprintf(command_line,"%s %s",imon_stop,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24168:45: warning: '%s' directive writing 7 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 4934 |                 start_monitor("Revread");
+      |                               ~~~~~~~~~      
+......
+24168 |                    sprintf(command_line,"%s %s&",imon_start,test);
+      |                                             ^~
+In function 'start_monitor',
+    inlined from 'start_monitor' at iozone.c:24156:1,
+    inlined from 'throughput_test' at iozone.c:4934:3:
+iozone.c:24168:20: note: 'sprintf' output between 10 and 265 bytes into a destination of size 256
+24168 |                    sprintf(command_line,"%s %s&",imon_start,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24166:45: warning: '%s' directive writing 7 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 4934 |                 start_monitor("Revread");
+      |                               ~~~~~~~~~      
+......
+24166 |                    sprintf(command_line,"%s %s",imon_start,test);
+      |                                             ^~
+In function 'start_monitor',
+    inlined from 'start_monitor' at iozone.c:24156:1,
+    inlined from 'throughput_test' at iozone.c:4934:3:
+iozone.c:24166:20: note: 'sprintf' output between 9 and 264 bytes into a destination of size 256
+24166 |                    sprintf(command_line,"%s %s",imon_start,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24186:45: warning: '%s' directive writing 7 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 5146 |                 stop_monitor("Revread");
+      |                              ~~~~~~~~~       
+......
+24186 |                    sprintf(command_line,"%s %s &",imon_stop,test);
+      |                                             ^~
+In function 'stop_monitor',
+    inlined from 'stop_monitor' at iozone.c:24174:1,
+    inlined from 'throughput_test' at iozone.c:5146:3:
+iozone.c:24186:20: note: 'sprintf' output between 11 and 266 bytes into a destination of size 256
+24186 |                    sprintf(command_line,"%s %s &",imon_stop,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24184:45: warning: '%s' directive writing 7 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 5146 |                 stop_monitor("Revread");
+      |                              ~~~~~~~~~       
+......
+24184 |                    sprintf(command_line,"%s %s",imon_stop,test);
+      |                                             ^~
+In function 'stop_monitor',
+    inlined from 'stop_monitor' at iozone.c:24174:1,
+    inlined from 'throughput_test' at iozone.c:5146:3:
+iozone.c:24184:20: note: 'sprintf' output between 9 and 264 bytes into a destination of size 256
+24184 |                    sprintf(command_line,"%s %s",imon_stop,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24168:45: warning: '%s' directive writing 10 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 5166 |                 start_monitor("Strideread");
+      |                               ~~~~~~~~~~~~   
+......
+24168 |                    sprintf(command_line,"%s %s&",imon_start,test);
+      |                                             ^~
+In function 'start_monitor',
+    inlined from 'start_monitor' at iozone.c:24156:1,
+    inlined from 'throughput_test' at iozone.c:5166:3:
+iozone.c:24168:20: note: 'sprintf' output between 13 and 268 bytes into a destination of size 256
+24168 |                    sprintf(command_line,"%s %s&",imon_start,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24166:45: warning: '%s' directive writing 10 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 5166 |                 start_monitor("Strideread");
+      |                               ~~~~~~~~~~~~   
+......
+24166 |                    sprintf(command_line,"%s %s",imon_start,test);
+      |                                             ^~
+In function 'start_monitor',
+    inlined from 'start_monitor' at iozone.c:24156:1,
+    inlined from 'throughput_test' at iozone.c:5166:3:
+iozone.c:24166:20: note: 'sprintf' output between 12 and 267 bytes into a destination of size 256
+24166 |                    sprintf(command_line,"%s %s",imon_start,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24186:45: warning: '%s' directive writing 10 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 5380 |                 stop_monitor("Strideread");
+      |                              ~~~~~~~~~~~~    
+......
+24186 |                    sprintf(command_line,"%s %s &",imon_stop,test);
+      |                                             ^~
+In function 'stop_monitor',
+    inlined from 'stop_monitor' at iozone.c:24174:1,
+    inlined from 'throughput_test' at iozone.c:5380:3:
+iozone.c:24186:20: note: 'sprintf' output between 14 and 269 bytes into a destination of size 256
+24186 |                    sprintf(command_line,"%s %s &",imon_stop,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24184:45: warning: '%s' directive writing 10 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 5380 |                 stop_monitor("Strideread");
+      |                              ~~~~~~~~~~~~    
+......
+24184 |                    sprintf(command_line,"%s %s",imon_stop,test);
+      |                                             ^~
+In function 'stop_monitor',
+    inlined from 'stop_monitor' at iozone.c:24174:1,
+    inlined from 'throughput_test' at iozone.c:5380:3:
+iozone.c:24184:20: note: 'sprintf' output between 12 and 267 bytes into a destination of size 256
+24184 |                    sprintf(command_line,"%s %s",imon_stop,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24168:45: warning: '%s' directive writing 8 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 5401 |                 start_monitor("Randread");
+      |                               ~~~~~~~~~~     
+......
+24168 |                    sprintf(command_line,"%s %s&",imon_start,test);
+      |                                             ^~
+In function 'start_monitor',
+    inlined from 'start_monitor' at iozone.c:24156:1,
+    inlined from 'throughput_test' at iozone.c:5401:3:
+iozone.c:24168:20: note: 'sprintf' output between 11 and 266 bytes into a destination of size 256
+24168 |                    sprintf(command_line,"%s %s&",imon_start,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24166:45: warning: '%s' directive writing 8 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 5401 |                 start_monitor("Randread");
+      |                               ~~~~~~~~~~     
+......
+24166 |                    sprintf(command_line,"%s %s",imon_start,test);
+      |                                             ^~
+In function 'start_monitor',
+    inlined from 'start_monitor' at iozone.c:24156:1,
+    inlined from 'throughput_test' at iozone.c:5401:3:
+iozone.c:24166:20: note: 'sprintf' output between 10 and 265 bytes into a destination of size 256
+24166 |                    sprintf(command_line,"%s %s",imon_start,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24186:45: warning: '%s' directive writing 8 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 5610 |                 stop_monitor("Randread");
+      |                              ~~~~~~~~~~      
+......
+24186 |                    sprintf(command_line,"%s %s &",imon_stop,test);
+      |                                             ^~
+In function 'stop_monitor',
+    inlined from 'stop_monitor' at iozone.c:24174:1,
+    inlined from 'throughput_test' at iozone.c:5610:3:
+iozone.c:24186:20: note: 'sprintf' output between 12 and 267 bytes into a destination of size 256
+24186 |                    sprintf(command_line,"%s %s &",imon_stop,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24184:45: warning: '%s' directive writing 8 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 5610 |                 stop_monitor("Randread");
+      |                              ~~~~~~~~~~      
+......
+24184 |                    sprintf(command_line,"%s %s",imon_stop,test);
+      |                                             ^~
+In function 'stop_monitor',
+    inlined from 'stop_monitor' at iozone.c:24174:1,
+    inlined from 'throughput_test' at iozone.c:5610:3:
+iozone.c:24184:20: note: 'sprintf' output between 10 and 265 bytes into a destination of size 256
+24184 |                    sprintf(command_line,"%s %s",imon_stop,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24168:45: warning: '%s' directive writing 5 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 5631 |                 start_monitor("Mixed");
+      |                               ~~~~~~~        
+......
+24168 |                    sprintf(command_line,"%s %s&",imon_start,test);
+      |                                             ^~
+In function 'start_monitor',
+    inlined from 'start_monitor' at iozone.c:24156:1,
+    inlined from 'throughput_test' at iozone.c:5631:3:
+iozone.c:24168:20: note: 'sprintf' output between 8 and 263 bytes into a destination of size 256
+24168 |                    sprintf(command_line,"%s %s&",imon_start,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24166:45: warning: '%s' directive writing 5 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 5631 |                 start_monitor("Mixed");
+      |                               ~~~~~~~        
+......
+24166 |                    sprintf(command_line,"%s %s",imon_start,test);
+      |                                             ^~
+In function 'start_monitor',
+    inlined from 'start_monitor' at iozone.c:24156:1,
+    inlined from 'throughput_test' at iozone.c:5631:3:
+iozone.c:24166:20: note: 'sprintf' output between 7 and 262 bytes into a destination of size 256
+24166 |                    sprintf(command_line,"%s %s",imon_start,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24186:45: warning: '%s' directive writing 5 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 5840 |                 stop_monitor("Mixed");
+      |                              ~~~~~~~         
+......
+24186 |                    sprintf(command_line,"%s %s &",imon_stop,test);
+      |                                             ^~
+In function 'stop_monitor',
+    inlined from 'stop_monitor' at iozone.c:24174:1,
+    inlined from 'throughput_test' at iozone.c:5840:3:
+iozone.c:24186:20: note: 'sprintf' output between 9 and 264 bytes into a destination of size 256
+24186 |                    sprintf(command_line,"%s %s &",imon_stop,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24184:45: warning: '%s' directive writing 5 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 5840 |                 stop_monitor("Mixed");
+      |                              ~~~~~~~         
+......
+24184 |                    sprintf(command_line,"%s %s",imon_stop,test);
+      |                                             ^~
+In function 'stop_monitor',
+    inlined from 'stop_monitor' at iozone.c:24174:1,
+    inlined from 'throughput_test' at iozone.c:5840:3:
+iozone.c:24184:20: note: 'sprintf' output between 7 and 262 bytes into a destination of size 256
+24184 |                    sprintf(command_line,"%s %s",imon_stop,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24168:45: warning: '%s' directive writing 9 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 5861 |                 start_monitor("Randwrite");
+      |                               ~~~~~~~~~~~    
+......
+24168 |                    sprintf(command_line,"%s %s&",imon_start,test);
+      |                                             ^~
+In function 'start_monitor',
+    inlined from 'start_monitor' at iozone.c:24156:1,
+    inlined from 'throughput_test' at iozone.c:5861:3:
+iozone.c:24168:20: note: 'sprintf' output between 12 and 267 bytes into a destination of size 256
+24168 |                    sprintf(command_line,"%s %s&",imon_start,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24166:45: warning: '%s' directive writing 9 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 5861 |                 start_monitor("Randwrite");
+      |                               ~~~~~~~~~~~    
+......
+24166 |                    sprintf(command_line,"%s %s",imon_start,test);
+      |                                             ^~
+In function 'start_monitor',
+    inlined from 'start_monitor' at iozone.c:24156:1,
+    inlined from 'throughput_test' at iozone.c:5861:3:
+iozone.c:24166:20: note: 'sprintf' output between 11 and 266 bytes into a destination of size 256
+24166 |                    sprintf(command_line,"%s %s",imon_start,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24186:45: warning: '%s' directive writing 9 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 6070 |                 stop_monitor("Randwrite");
+      |                              ~~~~~~~~~~~     
+......
+24186 |                    sprintf(command_line,"%s %s &",imon_stop,test);
+      |                                             ^~
+In function 'stop_monitor',
+    inlined from 'stop_monitor' at iozone.c:24174:1,
+    inlined from 'throughput_test' at iozone.c:6070:3:
+iozone.c:24186:20: note: 'sprintf' output between 13 and 268 bytes into a destination of size 256
+24186 |                    sprintf(command_line,"%s %s &",imon_stop,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24184:45: warning: '%s' directive writing 9 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 6070 |                 stop_monitor("Randwrite");
+      |                              ~~~~~~~~~~~     
+......
+24184 |                    sprintf(command_line,"%s %s",imon_stop,test);
+      |                                             ^~
+In function 'stop_monitor',
+    inlined from 'stop_monitor' at iozone.c:24174:1,
+    inlined from 'throughput_test' at iozone.c:6070:3:
+iozone.c:24184:20: note: 'sprintf' output between 11 and 266 bytes into a destination of size 256
+24184 |                    sprintf(command_line,"%s %s",imon_stop,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24168:45: warning: '%s' directive writing 6 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 6094 |                 start_monitor("Pwrite");
+      |                               ~~~~~~~~       
+......
+24168 |                    sprintf(command_line,"%s %s&",imon_start,test);
+      |                                             ^~
+In function 'start_monitor',
+    inlined from 'start_monitor' at iozone.c:24156:1,
+    inlined from 'throughput_test' at iozone.c:6094:3:
+iozone.c:24168:20: note: 'sprintf' output between 9 and 264 bytes into a destination of size 256
+24168 |                    sprintf(command_line,"%s %s&",imon_start,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24166:45: warning: '%s' directive writing 6 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 6094 |                 start_monitor("Pwrite");
+      |                               ~~~~~~~~       
+......
+24166 |                    sprintf(command_line,"%s %s",imon_start,test);
+      |                                             ^~
+In function 'start_monitor',
+    inlined from 'start_monitor' at iozone.c:24156:1,
+    inlined from 'throughput_test' at iozone.c:6094:3:
+iozone.c:24166:20: note: 'sprintf' output between 8 and 263 bytes into a destination of size 256
+24166 |                    sprintf(command_line,"%s %s",imon_start,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24186:45: warning: '%s' directive writing 6 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 6303 |                 stop_monitor("Pwrite");
+      |                              ~~~~~~~~        
+......
+24186 |                    sprintf(command_line,"%s %s &",imon_stop,test);
+      |                                             ^~
+In function 'stop_monitor',
+    inlined from 'stop_monitor' at iozone.c:24174:1,
+    inlined from 'throughput_test' at iozone.c:6303:3:
+iozone.c:24186:20: note: 'sprintf' output between 10 and 265 bytes into a destination of size 256
+24186 |                    sprintf(command_line,"%s %s &",imon_stop,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24184:45: warning: '%s' directive writing 6 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 6303 |                 stop_monitor("Pwrite");
+      |                              ~~~~~~~~        
+......
+24184 |                    sprintf(command_line,"%s %s",imon_stop,test);
+      |                                             ^~
+In function 'stop_monitor',
+    inlined from 'stop_monitor' at iozone.c:24174:1,
+    inlined from 'throughput_test' at iozone.c:6303:3:
+iozone.c:24184:20: note: 'sprintf' output between 8 and 263 bytes into a destination of size 256
+24184 |                    sprintf(command_line,"%s %s",imon_stop,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24168:45: warning: '%s' directive writing 5 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 6329 |                 start_monitor("Pread");
+      |                               ~~~~~~~        
+......
+24168 |                    sprintf(command_line,"%s %s&",imon_start,test);
+      |                                             ^~
+In function 'start_monitor',
+    inlined from 'start_monitor' at iozone.c:24156:1,
+    inlined from 'throughput_test' at iozone.c:6329:3:
+iozone.c:24168:20: note: 'sprintf' output between 8 and 263 bytes into a destination of size 256
+24168 |                    sprintf(command_line,"%s %s&",imon_start,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24166:45: warning: '%s' directive writing 5 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 6329 |                 start_monitor("Pread");
+      |                               ~~~~~~~        
+......
+24166 |                    sprintf(command_line,"%s %s",imon_start,test);
+      |                                             ^~
+In function 'start_monitor',
+    inlined from 'start_monitor' at iozone.c:24156:1,
+    inlined from 'throughput_test' at iozone.c:6329:3:
+iozone.c:24166:20: note: 'sprintf' output between 7 and 262 bytes into a destination of size 256
+24166 |                    sprintf(command_line,"%s %s",imon_start,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24186:45: warning: '%s' directive writing 5 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 6538 |                 stop_monitor("Pread");
+      |                              ~~~~~~~         
+......
+24186 |                    sprintf(command_line,"%s %s &",imon_stop,test);
+      |                                             ^~
+In function 'stop_monitor',
+    inlined from 'stop_monitor' at iozone.c:24174:1,
+    inlined from 'throughput_test' at iozone.c:6538:3:
+iozone.c:24186:20: note: 'sprintf' output between 9 and 264 bytes into a destination of size 256
+24186 |                    sprintf(command_line,"%s %s &",imon_stop,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24184:45: warning: '%s' directive writing 5 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 6538 |                 stop_monitor("Pread");
+      |                              ~~~~~~~         
+......
+24184 |                    sprintf(command_line,"%s %s",imon_stop,test);
+      |                                             ^~
+In function 'stop_monitor',
+    inlined from 'stop_monitor' at iozone.c:24174:1,
+    inlined from 'throughput_test' at iozone.c:6538:3:
+iozone.c:24184:20: note: 'sprintf' output between 7 and 262 bytes into a destination of size 256
+24184 |                    sprintf(command_line,"%s %s",imon_stop,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24168:45: warning: '%s' directive writing 6 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 6557 |                 start_monitor("Fwrite");
+      |                               ~~~~~~~~       
+......
+24168 |                    sprintf(command_line,"%s %s&",imon_start,test);
+      |                                             ^~
+In function 'start_monitor',
+    inlined from 'start_monitor' at iozone.c:24156:1,
+    inlined from 'throughput_test' at iozone.c:6557:3:
+iozone.c:24168:20: note: 'sprintf' output between 9 and 264 bytes into a destination of size 256
+24168 |                    sprintf(command_line,"%s %s&",imon_start,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24166:45: warning: '%s' directive writing 6 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 6557 |                 start_monitor("Fwrite");
+      |                               ~~~~~~~~       
+......
+24166 |                    sprintf(command_line,"%s %s",imon_start,test);
+      |                                             ^~
+In function 'start_monitor',
+    inlined from 'start_monitor' at iozone.c:24156:1,
+    inlined from 'throughput_test' at iozone.c:6557:3:
+iozone.c:24166:20: note: 'sprintf' output between 8 and 263 bytes into a destination of size 256
+24166 |                    sprintf(command_line,"%s %s",imon_start,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24186:45: warning: '%s' directive writing 6 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 6766 |                 stop_monitor("Fwrite");
+      |                              ~~~~~~~~        
+......
+24186 |                    sprintf(command_line,"%s %s &",imon_stop,test);
+      |                                             ^~
+In function 'stop_monitor',
+    inlined from 'stop_monitor' at iozone.c:24174:1,
+    inlined from 'throughput_test' at iozone.c:6766:3:
+iozone.c:24186:20: note: 'sprintf' output between 10 and 265 bytes into a destination of size 256
+24186 |                    sprintf(command_line,"%s %s &",imon_stop,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24184:45: warning: '%s' directive writing 6 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 6766 |                 stop_monitor("Fwrite");
+      |                              ~~~~~~~~        
+......
+24184 |                    sprintf(command_line,"%s %s",imon_stop,test);
+      |                                             ^~
+In function 'stop_monitor',
+    inlined from 'stop_monitor' at iozone.c:24174:1,
+    inlined from 'throughput_test' at iozone.c:6766:3:
+iozone.c:24184:20: note: 'sprintf' output between 8 and 263 bytes into a destination of size 256
+24184 |                    sprintf(command_line,"%s %s",imon_stop,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24168:45: warning: '%s' directive writing 5 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 6787 |                 start_monitor("Fread");
+      |                               ~~~~~~~        
+......
+24168 |                    sprintf(command_line,"%s %s&",imon_start,test);
+      |                                             ^~
+In function 'start_monitor',
+    inlined from 'start_monitor' at iozone.c:24156:1,
+    inlined from 'throughput_test' at iozone.c:6787:3:
+iozone.c:24168:20: note: 'sprintf' output between 8 and 263 bytes into a destination of size 256
+24168 |                    sprintf(command_line,"%s %s&",imon_start,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24166:45: warning: '%s' directive writing 5 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 6787 |                 start_monitor("Fread");
+      |                               ~~~~~~~        
+......
+24166 |                    sprintf(command_line,"%s %s",imon_start,test);
+      |                                             ^~
+In function 'start_monitor',
+    inlined from 'start_monitor' at iozone.c:24156:1,
+    inlined from 'throughput_test' at iozone.c:6787:3:
+iozone.c:24166:20: note: 'sprintf' output between 7 and 262 bytes into a destination of size 256
+24166 |                    sprintf(command_line,"%s %s",imon_start,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24186:45: warning: '%s' directive writing 5 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 6996 |                 stop_monitor("Fread");
+      |                              ~~~~~~~         
+......
+24186 |                    sprintf(command_line,"%s %s &",imon_stop,test);
+      |                                             ^~
+In function 'stop_monitor',
+    inlined from 'stop_monitor' at iozone.c:24174:1,
+    inlined from 'throughput_test' at iozone.c:6996:3:
+iozone.c:24186:20: note: 'sprintf' output between 9 and 264 bytes into a destination of size 256
+24186 |                    sprintf(command_line,"%s %s &",imon_stop,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+iozone.c: In function 'throughput_test':
+iozone.c:24184:45: warning: '%s' directive writing 5 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 6996 |                 stop_monitor("Fread");
+      |                              ~~~~~~~         
+......
+24184 |                    sprintf(command_line,"%s %s",imon_stop,test);
+      |                                             ^~
+In function 'stop_monitor',
+    inlined from 'stop_monitor' at iozone.c:24174:1,
+    inlined from 'throughput_test' at iozone.c:6996:3:
+iozone.c:24184:20: note: 'sprintf' output between 7 and 262 bytes into a destination of size 256
+24184 |                    sprintf(command_line,"%s %s",imon_stop,test);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc -Wmissing-prototypes -Wall -c -O3 -Dunix -DHAVE_ANSIC_C -DASYNC_IO -D_LARGEFILE64_SOURCE \
+	-DSHARED_MEM -Dlinux -fcommon libbif.c -o libbif.o
+cc -Wmissing-prototypes -Wall -c -O3 -Dunix -Dlinux -DHAVE_ANSIC_C -DASYNC_IO \
+	-D_LARGEFILE64_SOURCE -fcommon libasync.c  -o libasync.o 
+libasync.c: In function 'async_read_no_copy':
+libasync.c:729:17: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  729 |                 if(ret)
+      |                 ^~
+libasync.c:731:25: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  731 |                         printf("It changed in flight\n");
+      |                         ^~~~~~
+libasync.c: At top level:
+libasync.c:164:19: warning: 'version' defined but not used [-Wunused-const-variable=]
+  164 | static const char version[] = "Libasync Version $Revision: 3.32 $";
+      |                   ^~~~~~~
+
+Building fileop for Linux
+
+cc -Wall -c -O3 -fcommon fileop.c -o fileop_linux.o
+
+Building the pit_server
+
+cc -c  -fcommon pit_server.c  -o pit_server.o 
+cc  -O3  iozone_linux.o libasync.o libbif.o -lpthread \
+	-lrt -o iozone
+cc  -O3 -Dlinux fileop_linux.o -o fileop
+cc  -O3 -Dlinux pit_server.o -o pit_server

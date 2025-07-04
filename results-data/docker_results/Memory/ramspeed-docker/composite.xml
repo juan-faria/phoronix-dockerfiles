@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>2025-06-01-2010</Title>
+    <LastModified>2025-06-01 21:06:40</LastModified>
+    <TestClient>Phoronix Test Suite v10.8.5</TestClient>
+    <Description>Docker testing on Debian GNU/Linux 12 via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>2025-06-01 20:10</Identifier>
+    <Hardware>Processor: ARMv8 Cortex-A72 @ 1.80GHz (4 Cores), Memory: 4096MB, Disk: 64GB SC64G, Graphics: BCM2708</Hardware>
+    <Software>OS: Debian GNU/Linux 12, Kernel: 6.12.20+rpt-rpi-v8 (aarch64), Compiler: GCC 12.2.0, File-System: overlayfs, Screen Resolution: 1920x1080, System Layer: Docker</Software>
+    <User>phoronix</User>
+    <TimeStamp>2025-06-01 20:10:56</TimeStamp>
+    <TestClientVersion>10.8.5</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=aarch64-linux-gnu --disable-libquadmath --disable-libquadmath-support --disable-werror --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-fix-cortex-a53-843419 --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --enable-libphobos-checking=release --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-nls --enable-objc-gc=auto --enable-plugin --enable-shared --enable-threads=posix --host=aarch64-linux-gnu --program-prefix=aarch64-linux-gnu- --target=aarch64-linux-gnu --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-target-system-zlib=auto -v","cpu-scaling-governor":"cpufreq-dt ondemand","kernel-parameters":"snd_bcm2835.enable_headphones=0 snd_bcm2835.enable_headphones=1 snd_bcm2835.enable_hdmi=1 cfg80211.ieee80211_regdom=GB","security":"gather_data_sampling: Not affected + itlb_multihit: Not affected + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Not affected + reg_file_data_sampling: Not affected + retbleed: Not affected + spec_rstack_overflow: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of __user pointer sanitization + spectre_v2: Vulnerable + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/ramspeed-1.4.3</Identifier>
+    <Title>RAMspeed SMP</Title>
+    <AppVersion>3.5.0</AppVersion>
+    <Arguments>AVERAGE -b 3</Arguments>
+    <Description>Type: Average - Benchmark: Integer</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>2025-06-01 20:10</Identifier>
+        <Value>3302.89</Value>
+        <RawString>3232.43:3311.5:3364.73</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"572.17:564.91:564.78"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ramspeed-1.4.3</Identifier>
+    <Title>RAMspeed SMP</Title>
+    <AppVersion>3.5.0</AppVersion>
+    <Arguments>AVERAGE -b 6</Arguments>
+    <Description>Type: Average - Benchmark: Floating Point</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>2025-06-01 20:10</Identifier>
+        <Value>3498.54</Value>
+        <RawString>3454.61:3496.11:3544.91</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"537.33:537.43:534.77"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

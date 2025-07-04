@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>iospeed-baremetal-retest</Title>
+    <LastModified>2025-06-17 09:20:01</LastModified>
+    <TestClient>Phoronix Test Suite v10.8.4</TestClient>
+    <Description>ARMv8 Cortex-A72 testing with a Raspberry Pi 4 Model B Rev 1.5 and BCM2708 on Debian 12 via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>Retest for baremetal config due to lack o read 2mb.</Identifier>
+    <Hardware>Processor: ARMv8 Cortex-A72 @ 1.80GHz (4 Cores), Motherboard: Raspberry Pi 4 Model B Rev 1.5, Chipset: Broadcom BCM2711, Memory: 4096MB, Disk: 64GB SC64G, Graphics: BCM2708</Hardware>
+    <Software>OS: Debian 12, Kernel: 6.12.20+rpt-rpi-v8 (aarch64), Compiler: GCC 12.2.0, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>pi</User>
+    <TimeStamp>2025-06-17 03:22:53</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=aarch64-linux-gnu --disable-libquadmath --disable-libquadmath-support --disable-werror --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-fix-cortex-a53-843419 --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --enable-libphobos-checking=release --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-nls --enable-objc-gc=auto --enable-plugin --enable-shared --enable-threads=posix --host=aarch64-linux-gnu --program-prefix=aarch64-linux-gnu- --target=aarch64-linux-gnu --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-target-system-zlib=auto -v","disk-mount-options":"noatime,rw","disk-details":"Block Size: 4096","cpu-scaling-governor":"cpufreq-dt ondemand","kernel-parameters":"snd_bcm2835.enable_headphones=0 snd_bcm2835.enable_headphones=1 snd_bcm2835.enable_hdmi=1 cfg80211.ieee80211_regdom=GB","security":"gather_data_sampling: Not affected + itlb_multihit: Not affected + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Not affected + reg_file_data_sampling: Not affected + retbleed: Not affected + spec_rstack_overflow: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of __user pointer sanitization + spectre_v2: Vulnerable + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/iozone-1.9.6</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.465</AppVersion>
+    <Arguments>-r 2m -s 512M -i0 -i1 #READ</Arguments>
+    <Description>Record Size: 2MB - File Size: 512MB - Disk Test: Read Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Retest for baremetal config due to lack o read 2mb.</Identifier>
+        <Value>1223.78</Value>
+        <RawString>1171.294921875:1209.8232421875:1286.4541015625:1249.87109375:1137.7646484375:1156.9677734375:1183.2919921875:1248.265625:1286.2119140625:1209.623046875:1220.5703125:1283.185546875:1202.33203125:1252.13671875:1258.9814453125</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"44.24:43.39:43.87:42.69:43.74:44.22:46.22:47.44:42.12:45.51:46.14:44.86:42.66:42.17:44.14"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.9.6</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.465</AppVersion>
+    <Arguments>-r 4k -s 512M -i0 -i1 #READ</Arguments>
+    <Description>Record Size: 4Kb - File Size: 512MB - Disk Test: Read Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Retest for baremetal config due to lack o read 2mb.</Identifier>
+        <Value>1639.45</Value>
+        <RawString>1627.0498046875:1929.1279296875:1546.4482421875:1838.00390625:1535.287109375:1579.4951171875:1570.435546875:1616.2880859375:1512.88671875</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"1665.69:1654.80:1645.89:1662.70:1669.36:1679.65:1663.85:1649.12:1664.65"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.9.6</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.465</AppVersion>
+    <Arguments>-r 2m -s 512M -i0 #WRITE</Arguments>
+    <Description>Record Size: 2MB - File Size: 512MB - Disk Test: Write Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Retest for baremetal config due to lack o read 2mb.</Identifier>
+        <Value>22.62</Value>
+        <RawString>21.7353515625:21.1650390625:23.8515625:20.9677734375:23.6611328125:21.9013671875:22.9765625:23.2666015625:22.529296875:23.3671875:21.7548828125:23.0791015625:21.615234375:23.9365234375:23.4990234375</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"44.11:46.80:42.07:47.00:43.40:44.00:45.04:42.51:43.15:45.38:46.75:43.04:44.72:44.15:44.13"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.9.6</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.465</AppVersion>
+    <Arguments>-r 4k -s 512M -i0 #WRITE</Arguments>
+    <Description>Record Size: 4Kb - File Size: 512MB - Disk Test: Write Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Retest for baremetal config due to lack o read 2mb.</Identifier>
+        <Value>0.56</Value>
+        <RawString>0.5576171875:0.56640625:0.56640625</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"1650.36:1646.13:1651.18"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

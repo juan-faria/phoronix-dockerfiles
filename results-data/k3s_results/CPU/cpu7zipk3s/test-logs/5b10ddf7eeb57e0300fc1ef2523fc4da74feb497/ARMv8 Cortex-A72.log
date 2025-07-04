@@ -1,0 +1,93 @@
+#####
+ARMv8 Cortex-A72 - Run 1
+2025-05-31 19:47:12
+#####
+
+7-Zip (z) 24.05 (arm64) : Copyright (c) 1999-2024 Igor Pavlov : 2024-05-14
+ 64-bit arm_v:8-A locale=C.UTF-8 Threads:4 OPEN_MAX:1048576
+
+Compiler:  ver:12.2.0 GCC 12.2.0 : UNALIGNED
+Linux : 6.12.20+rpt-rpi-v8 : #1 SMP PREEMPT Debian 1:6.12.20-1+rpt1~bpo12+1 (2025-03-19) : aarch64
+PageSize:4KB hwcap:887:CRC32:ASIMD
+LE 
+
+1T CPU Freq (MHz):   921  1197  1724  1797  1797  1792  1795
+2T CPU Freq (MHz): 198% 1780   200% 1787  
+
+RAM size:    3791 MB,  # CPU hardware threads:   4
+RAM usage:    889 MB,  # Benchmark threads:      4
+
+                       Compressing  |                  Decompressing
+Dict     Speed Usage    R/U Rating  |      Speed Usage    R/U Rating
+         KiB/s     %   MIPS   MIPS  |      KiB/s     %   MIPS   MIPS
+
+22:       4601   339   1322   4476  |      89733   394   1941   7655
+23:       4352   349   1271   4435  |      88132   395   1931   7626
+24:       4290   353   1306   4613  |      85846   393   1918   7534
+25:       4310   361   1362   4922  |      84322   396   1896   7505
+----------------------------------  | ------------------------------
+Avr:      4388   351   1315   4611  |      87008   394   1922   7580
+Tot:             372   1618   6096
+
+#####
+ARMv8 Cortex-A72 - Run 2
+2025-05-31 19:48:28
+#####
+
+7-Zip (z) 24.05 (arm64) : Copyright (c) 1999-2024 Igor Pavlov : 2024-05-14
+ 64-bit arm_v:8-A locale=C.UTF-8 Threads:4 OPEN_MAX:1048576
+
+Compiler:  ver:12.2.0 GCC 12.2.0 : UNALIGNED
+Linux : 6.12.20+rpt-rpi-v8 : #1 SMP PREEMPT Debian 1:6.12.20-1+rpt1~bpo12+1 (2025-03-19) : aarch64
+PageSize:4KB hwcap:887:CRC32:ASIMD
+LE 
+
+1T CPU Freq (MHz):   794  1472  1775  1796  1791  1795  1795
+2T CPU Freq (MHz): 199% 1789   199% 1787  
+
+RAM size:    3791 MB,  # CPU hardware threads:   4
+RAM usage:    889 MB,  # Benchmark threads:      4
+
+                       Compressing  |                  Decompressing
+Dict     Speed Usage    R/U Rating  |      Speed Usage    R/U Rating
+         KiB/s     %   MIPS   MIPS  |      KiB/s     %   MIPS   MIPS
+
+22:       4616   338   1330   4491  |      88273   390   1930   7531
+23:       4402   349   1285   4486  |      87230   392   1924   7548
+24:       4355   355   1321   4683  |      86104   395   1915   7556
+25:       4304   360   1365   4915  |      83589   394   1887   7439
+----------------------------------  | ------------------------------
+Avr:      4419   350   1325   4644  |      86299   393   1914   7519
+Tot:             372   1620   6081
+
+#####
+ARMv8 Cortex-A72 - Run 3
+2025-05-31 19:49:41
+#####
+
+7-Zip (z) 24.05 (arm64) : Copyright (c) 1999-2024 Igor Pavlov : 2024-05-14
+ 64-bit arm_v:8-A locale=C.UTF-8 Threads:4 OPEN_MAX:1048576
+
+Compiler:  ver:12.2.0 GCC 12.2.0 : UNALIGNED
+Linux : 6.12.20+rpt-rpi-v8 : #1 SMP PREEMPT Debian 1:6.12.20-1+rpt1~bpo12+1 (2025-03-19) : aarch64
+PageSize:4KB hwcap:887:CRC32:ASIMD
+LE 
+
+1T CPU Freq (MHz):   771  1330  1797  1797  1793  1793  1791
+2T CPU Freq (MHz): 199% 1785   199% 1788  
+
+RAM size:    3791 MB,  # CPU hardware threads:   4
+RAM usage:    889 MB,  # Benchmark threads:      4
+
+                       Compressing  |                  Decompressing
+Dict     Speed Usage    R/U Rating  |      Speed Usage    R/U Rating
+         KiB/s     %   MIPS   MIPS  |      KiB/s     %   MIPS   MIPS
+
+22:       4553   337   1315   4429  |      88968   392   1938   7590
+23:       4393   346   1295   4476  |      87197   391   1928   7545
+24:       4313   357   1298   4638  |      86056   395   1913   7552
+25:       4191   359   1334   4786  |      83030   391   1889   7390
+----------------------------------  | ------------------------------
+Avr:      4362   350   1310   4582  |      86313   392   1917   7519
+Tot:             371   1614   6051
+

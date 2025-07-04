@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>2025-05-31-2008</Title>
+    <LastModified>2025-05-31 20:12:04</LastModified>
+    <TestClient>Phoronix Test Suite v10.8.5</TestClient>
+    <Description>Docker testing on Debian GNU/Linux 12 via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>ARMv8 Cortex-A72</Identifier>
+    <Hardware>Processor: ARMv8 Cortex-A72 @ 1.80GHz (4 Cores), Memory: 4096MB, Disk: 64GB SC64G, Graphics: BCM2708</Hardware>
+    <Software>OS: Debian GNU/Linux 12, Kernel: 6.12.20+rpt-rpi-v8 (aarch64), Compiler: GCC 12.2.0, File-System: overlayfs, Screen Resolution: 1920x1080, System Layer: Docker</Software>
+    <User>root</User>
+    <TimeStamp>2025-05-31 20:08:16</TimeStamp>
+    <TestClientVersion>10.8.5</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=aarch64-linux-gnu --disable-libquadmath --disable-libquadmath-support --disable-werror --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-fix-cortex-a53-843419 --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --enable-libphobos-checking=release --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-nls --enable-objc-gc=auto --enable-plugin --enable-shared --enable-threads=posix --host=aarch64-linux-gnu --program-prefix=aarch64-linux-gnu- --target=aarch64-linux-gnu --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-target-system-zlib=auto -v","cpu-scaling-governor":"cpufreq-dt ondemand","kernel-parameters":"snd_bcm2835.enable_headphones=0 snd_bcm2835.enable_headphones=1 snd_bcm2835.enable_hdmi=1 cfg80211.ieee80211_regdom=GB","security":"gather_data_sampling: Not affected + itlb_multihit: Not affected + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Not affected + reg_file_data_sampling: Not affected + retbleed: Not affected + spec_rstack_overflow: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of __user pointer sanitization + spectre_v2: Vulnerable + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/compress-7zip-1.11.0</Identifier>
+    <Title>7-Zip Compression</Title>
+    <AppVersion>24.05</AppVersion>
+    <Arguments></Arguments>
+    <Description>Test: Compression Rating</Description>
+    <Scale>MIPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ARMv8 Cortex-A72</Identifier>
+        <Value>4645</Value>
+        <RawString>4667:4673:4596</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lpthread -ldl -O2 -fPIC"},"test-run-times":"71.62:71.15:72.03"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-7zip-1.11.0</Identifier>
+    <Title>7-Zip Compression</Title>
+    <AppVersion>24.05</AppVersion>
+    <Arguments></Arguments>
+    <Description>Test: Decompression Rating</Description>
+    <Scale>MIPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ARMv8 Cortex-A72</Identifier>
+        <Value>7585</Value>
+        <RawString>7552:7612:7590</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lpthread -ldl -O2 -fPIC"},"test-run-times":"71.62:71.15:72.03"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

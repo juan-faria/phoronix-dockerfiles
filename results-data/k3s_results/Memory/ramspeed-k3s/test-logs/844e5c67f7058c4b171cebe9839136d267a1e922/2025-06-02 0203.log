@@ -1,0 +1,303 @@
+#####
+2025-06-02 02:03 - Run 1
+2025-06-02 02:12:40
+#####
+RAMspeed/SMP (GENERIC) v3.5.0 by Rhett M. Hollander and Paul V. Bolotoff, 2002-09
+
+8Gb per pass mode, 2 processes
+
+10-benchmark INTmem BatchRun mode
+
+Benchmark #1:
+INTEGER   Copy:      4162.56 MB/s
+INTEGER   Scale:     3501.01 MB/s
+INTEGER   Add:       4100.74 MB/s
+INTEGER   Triad:     2578.64 MB/s
+---
+INTEGER   AVERAGE:   3585.74 MB/s
+
+Benchmark #2:
+INTEGER   Copy:      3383.37 MB/s
+INTEGER   Scale:     3568.46 MB/s
+INTEGER   Add:       4034.14 MB/s
+INTEGER   Triad:     2585.80 MB/s
+---
+INTEGER   AVERAGE:   3392.94 MB/s
+
+Benchmark #3:
+INTEGER   Copy:      3416.30 MB/s
+INTEGER   Scale:     3544.62 MB/s
+INTEGER   Add:       4026.96 MB/s
+INTEGER   Triad:     2421.26 MB/s
+---
+INTEGER   AVERAGE:   3352.28 MB/s
+
+Benchmark #4:
+INTEGER   Copy:      3525.32 MB/s
+INTEGER   Scale:     3523.08 MB/s
+INTEGER   Add:       3847.86 MB/s
+INTEGER   Triad:     2578.04 MB/s
+---
+INTEGER   AVERAGE:   3368.58 MB/s
+
+Benchmark #5:
+INTEGER   Copy:      3463.37 MB/s
+INTEGER   Scale:     3615.82 MB/s
+INTEGER   Add:       4009.45 MB/s
+INTEGER   Triad:     2572.31 MB/s
+---
+INTEGER   AVERAGE:   3415.24 MB/s
+
+Benchmark #6:
+INTEGER   Copy:      3389.68 MB/s
+INTEGER   Scale:     3500.00 MB/s
+INTEGER   Add:       4015.34 MB/s
+INTEGER   Triad:     2565.84 MB/s
+---
+INTEGER   AVERAGE:   3367.71 MB/s
+
+Benchmark #7:
+INTEGER   Copy:      3634.74 MB/s
+INTEGER   Scale:     3700.73 MB/s
+INTEGER   Add:       3555.58 MB/s
+INTEGER   Triad:     2381.55 MB/s
+---
+INTEGER   AVERAGE:   3318.15 MB/s
+
+Benchmark #8:
+INTEGER   Copy:      3713.30 MB/s
+INTEGER   Scale:     3700.23 MB/s
+INTEGER   Add:       3560.37 MB/s
+INTEGER   Triad:     2378.66 MB/s
+---
+INTEGER   AVERAGE:   3338.14 MB/s
+
+Benchmark #9:
+INTEGER   Copy:      3618.46 MB/s
+INTEGER   Scale:     3763.57 MB/s
+INTEGER   Add:       3565.79 MB/s
+INTEGER   Triad:     2386.99 MB/s
+---
+INTEGER   AVERAGE:   3333.70 MB/s
+
+Benchmark #10:
+INTEGER   Copy:      3694.50 MB/s
+INTEGER   Scale:     3717.10 MB/s
+INTEGER   Add:       3563.47 MB/s
+INTEGER   Triad:     2392.07 MB/s
+---
+INTEGER   AVERAGE:   3341.79 MB/s
+
+INTEGER BatchRun   Copy:      3600.16 MB/s
+INTEGER BatchRun   Scale:     3613.46 MB/s
+INTEGER BatchRun   Add:       3827.97 MB/s
+INTEGER BatchRun   Triad:     2484.12 MB/s
+---
+INTEGER BatchRun   AVERAGE:   3381.43 MB/s
+RAMspeed/SMP (GENERIC) v3.5.0 by Rhett M. Hollander and Paul V. Bolotoff, 2002-09
+
+8Gb per pass mode, 2 processes
+
+
+#####
+2025-06-02 02:03 - Run 2
+2025-06-02 02:21:54
+#####
+RAMspeed/SMP (GENERIC) v3.5.0 by Rhett M. Hollander and Paul V. Bolotoff, 2002-09
+
+8Gb per pass mode, 2 processes
+
+10-benchmark INTmem BatchRun mode
+
+Benchmark #1:
+INTEGER   Copy:      3608.11 MB/s
+INTEGER   Scale:     3729.61 MB/s
+INTEGER   Add:       3556.44 MB/s
+INTEGER   Triad:     2368.35 MB/s
+---
+INTEGER   AVERAGE:   3315.63 MB/s
+
+Benchmark #2:
+INTEGER   Copy:      3692.60 MB/s
+INTEGER   Scale:     3701.00 MB/s
+INTEGER   Add:       3554.42 MB/s
+INTEGER   Triad:     2390.44 MB/s
+---
+INTEGER   AVERAGE:   3334.62 MB/s
+
+Benchmark #3:
+INTEGER   Copy:      3714.84 MB/s
+INTEGER   Scale:     3748.39 MB/s
+INTEGER   Add:       3562.88 MB/s
+INTEGER   Triad:     2378.75 MB/s
+---
+INTEGER   AVERAGE:   3351.21 MB/s
+
+Benchmark #4:
+INTEGER   Copy:      3615.26 MB/s
+INTEGER   Scale:     3957.83 MB/s
+INTEGER   Add:       3534.06 MB/s
+INTEGER   Triad:     2380.73 MB/s
+---
+INTEGER   AVERAGE:   3371.97 MB/s
+
+Benchmark #5:
+INTEGER   Copy:      3762.22 MB/s
+INTEGER   Scale:     3730.15 MB/s
+INTEGER   Add:       3559.45 MB/s
+INTEGER   Triad:     2380.83 MB/s
+---
+INTEGER   AVERAGE:   3358.16 MB/s
+
+Benchmark #6:
+INTEGER   Copy:      3693.23 MB/s
+INTEGER   Scale:     3764.07 MB/s
+INTEGER   Add:       3557.57 MB/s
+INTEGER   Triad:     2375.52 MB/s
+---
+INTEGER   AVERAGE:   3347.60 MB/s
+
+Benchmark #7:
+INTEGER   Copy:      3779.28 MB/s
+INTEGER   Scale:     3692.50 MB/s
+INTEGER   Add:       3555.99 MB/s
+INTEGER   Triad:     2376.89 MB/s
+---
+INTEGER   AVERAGE:   3351.16 MB/s
+
+Benchmark #8:
+INTEGER   Copy:      3761.02 MB/s
+INTEGER   Scale:     3680.67 MB/s
+INTEGER   Add:       3547.25 MB/s
+INTEGER   Triad:     2382.03 MB/s
+---
+INTEGER   AVERAGE:   3342.74 MB/s
+
+Benchmark #9:
+INTEGER   Copy:      3656.72 MB/s
+INTEGER   Scale:     3876.59 MB/s
+INTEGER   Add:       3556.06 MB/s
+INTEGER   Triad:     2388.43 MB/s
+---
+INTEGER   AVERAGE:   3369.45 MB/s
+
+Benchmark #10:
+INTEGER   Copy:      3788.84 MB/s
+INTEGER   Scale:     3657.34 MB/s
+INTEGER   Add:       3557.72 MB/s
+INTEGER   Triad:     2381.50 MB/s
+---
+INTEGER   AVERAGE:   3346.35 MB/s
+
+INTEGER BatchRun   Copy:      3707.21 MB/s
+INTEGER BatchRun   Scale:     3753.81 MB/s
+INTEGER BatchRun   Add:       3554.18 MB/s
+INTEGER BatchRun   Triad:     2380.35 MB/s
+---
+INTEGER BatchRun   AVERAGE:   3348.89 MB/s
+RAMspeed/SMP (GENERIC) v3.5.0 by Rhett M. Hollander and Paul V. Bolotoff, 2002-09
+
+8Gb per pass mode, 2 processes
+
+
+#####
+2025-06-02 02:03 - Run 3
+2025-06-02 02:31:14
+#####
+RAMspeed/SMP (GENERIC) v3.5.0 by Rhett M. Hollander and Paul V. Bolotoff, 2002-09
+
+8Gb per pass mode, 2 processes
+
+10-benchmark INTmem BatchRun mode
+
+Benchmark #1:
+INTEGER   Copy:      3660.61 MB/s
+INTEGER   Scale:     3458.13 MB/s
+INTEGER   Add:       4036.24 MB/s
+INTEGER   Triad:     2567.15 MB/s
+---
+INTEGER   AVERAGE:   3430.53 MB/s
+
+Benchmark #2:
+INTEGER   Copy:      3445.08 MB/s
+INTEGER   Scale:     3756.45 MB/s
+INTEGER   Add:       4038.12 MB/s
+INTEGER   Triad:     2562.35 MB/s
+---
+INTEGER   AVERAGE:   3450.50 MB/s
+
+Benchmark #3:
+INTEGER   Copy:      3519.18 MB/s
+INTEGER   Scale:     3581.81 MB/s
+INTEGER   Add:       4025.18 MB/s
+INTEGER   Triad:     2488.49 MB/s
+---
+INTEGER   AVERAGE:   3403.67 MB/s
+
+Benchmark #4:
+INTEGER   Copy:      3769.19 MB/s
+INTEGER   Scale:     3711.89 MB/s
+INTEGER   Add:       4019.54 MB/s
+INTEGER   Triad:     2564.00 MB/s
+---
+INTEGER   AVERAGE:   3516.15 MB/s
+
+Benchmark #5:
+INTEGER   Copy:      3536.98 MB/s
+INTEGER   Scale:     3737.47 MB/s
+INTEGER   Add:       3987.93 MB/s
+INTEGER   Triad:     2579.48 MB/s
+---
+INTEGER   AVERAGE:   3460.47 MB/s
+
+Benchmark #6:
+INTEGER   Copy:      3463.07 MB/s
+INTEGER   Scale:     3678.86 MB/s
+INTEGER   Add:       4026.58 MB/s
+INTEGER   Triad:     2570.61 MB/s
+---
+INTEGER   AVERAGE:   3434.78 MB/s
+
+Benchmark #7:
+INTEGER   Copy:      3440.61 MB/s
+INTEGER   Scale:     3571.98 MB/s
+INTEGER   Add:       4030.65 MB/s
+INTEGER   Triad:     2569.25 MB/s
+---
+INTEGER   AVERAGE:   3403.12 MB/s
+
+Benchmark #8:
+INTEGER   Copy:      3473.46 MB/s
+INTEGER   Scale:     3656.11 MB/s
+INTEGER   Add:       3916.47 MB/s
+INTEGER   Triad:     2414.56 MB/s
+---
+INTEGER   AVERAGE:   3365.15 MB/s
+
+Benchmark #9:
+INTEGER   Copy:      3576.41 MB/s
+INTEGER   Scale:     3994.43 MB/s
+INTEGER   Add:       4019.45 MB/s
+INTEGER   Triad:     2553.97 MB/s
+---
+INTEGER   AVERAGE:   3536.07 MB/s
+
+Benchmark #10:
+INTEGER   Copy:      3625.24 MB/s
+INTEGER   Scale:     3518.70 MB/s
+INTEGER   Add:       4005.06 MB/s
+INTEGER   Triad:     2545.59 MB/s
+---
+INTEGER   AVERAGE:   3423.65 MB/s
+
+INTEGER BatchRun   Copy:      3550.98 MB/s
+INTEGER BatchRun   Scale:     3666.58 MB/s
+INTEGER BatchRun   Add:       4010.52 MB/s
+INTEGER BatchRun   Triad:     2541.54 MB/s
+---
+INTEGER BatchRun   AVERAGE:   3442.41 MB/s
+RAMspeed/SMP (GENERIC) v3.5.0 by Rhett M. Hollander and Paul V. Bolotoff, 2002-09
+
+8Gb per pass mode, 2 processes
+
+

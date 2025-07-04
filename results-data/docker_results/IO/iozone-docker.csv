@@ -1,0 +1,21 @@
+2025-06-16-0025
+Docker testing on Debian GNU/Linux 12 via the Phoronix Test Suite.
+
+ ,,"SC64G"
+Processor,,ARMv8 Cortex-A72 @ 1.80GHz (4 Cores)
+Memory,,4096MB
+Disk,,64GB SC64G
+Graphics,,BCM2708
+OS,,Debian GNU/Linux 12
+Kernel,,6.12.20+rpt-rpi-v8 (aarch64)
+Compiler,,GCC 12.2.0
+File-System,,overlayfs
+Screen Resolution,,1920x1080
+System Layer,,Docker
+
+ ,,"SC64G"
+"IOzone - Record Size: 2MB - File Size: 512MB - Disk Test: Read Performance (MB/s)",HIB,1222.26
+"IOzone - Record Size: 4Kb - File Size: 512MB - Disk Test: Read Performance (MB/s)",HIB,1269.23
+"IOzone - Record Size: 2MB - File Size: 512MB - Disk Test: Write Performance (MB/s)",HIB,22.99
+"IOzone - Record Size: 4Kb - File Size: 512MB - Disk Test: Write Performance (MB/s)",HIB,0.567057292
+

@@ -1,0 +1,93 @@
+#####
+retesting the baremetal - Run 1
+2025-05-31 20:03:10
+#####
+
+7-Zip (z) 24.05 (arm64) : Copyright (c) 1999-2024 Igor Pavlov : 2024-05-14
+ 64-bit arm_v:8-A locale=C.UTF-8 Threads:4 OPEN_MAX:1024
+
+Compiler:  ver:12.2.0 GCC 12.2.0 : UNALIGNED
+Linux : 6.12.20+rpt-rpi-v8 : #1 SMP PREEMPT Debian 1:6.12.20-1+rpt1~bpo12+1 (2025-03-19) : aarch64
+PageSize:4KB hwcap:887:CRC32:ASIMD
+LE 
+
+1T CPU Freq (MHz):  1789  1798  1795  1774  1792  1795  1794
+2T CPU Freq (MHz): 199% 1789   199% 1728  
+
+RAM size:    3791 MB,  # CPU hardware threads:   4
+RAM usage:    889 MB,  # Benchmark threads:      4
+
+                       Compressing  |                  Decompressing
+Dict     Speed Usage    R/U Rating  |      Speed Usage    R/U Rating
+         KiB/s     %   MIPS   MIPS  |      KiB/s     %   MIPS   MIPS
+
+22:       4620   334   1344   4495  |      89889   394   1944   7669
+23:       4426   352   1282   4510  |      88282   395   1932   7639
+24:       4376   348   1353   4706  |      86059   394   1918   7552
+25:       4327   358   1380   4941  |      83855   394   1895   7463
+----------------------------------  | ------------------------------
+Avr:      4437   348   1340   4663  |      87021   394   1922   7581
+Tot:             371   1631   6122
+
+#####
+retesting the baremetal - Run 2
+2025-05-31 20:04:24
+#####
+
+7-Zip (z) 24.05 (arm64) : Copyright (c) 1999-2024 Igor Pavlov : 2024-05-14
+ 64-bit arm_v:8-A locale=C.UTF-8 Threads:4 OPEN_MAX:1024
+
+Compiler:  ver:12.2.0 GCC 12.2.0 : UNALIGNED
+Linux : 6.12.20+rpt-rpi-v8 : #1 SMP PREEMPT Debian 1:6.12.20-1+rpt1~bpo12+1 (2025-03-19) : aarch64
+PageSize:4KB hwcap:887:CRC32:ASIMD
+LE 
+
+1T CPU Freq (MHz):   716  1794  1798  1797  1794  1794  1794
+2T CPU Freq (MHz): 197% 1788   199% 1785  
+
+RAM size:    3791 MB,  # CPU hardware threads:   4
+RAM usage:    889 MB,  # Benchmark threads:      4
+
+                       Compressing  |                  Decompressing
+Dict     Speed Usage    R/U Rating  |      Speed Usage    R/U Rating
+         KiB/s     %   MIPS   MIPS  |      KiB/s     %   MIPS   MIPS
+
+22:       4687   340   1341   4560  |      89695   393   1946   7652
+23:       4450   347   1308   4535  |      88215   395   1931   7633
+24:       4475   355   1356   4812  |      86365   395   1920   7579
+25:       4321   362   1364   4934  |      84449   396   1897   7516
+----------------------------------  | ------------------------------
+Avr:      4483   351   1342   4710  |      87181   395   1923   7595
+Tot:             373   1633   6153
+
+#####
+retesting the baremetal - Run 3
+2025-05-31 20:05:37
+#####
+
+7-Zip (z) 24.05 (arm64) : Copyright (c) 1999-2024 Igor Pavlov : 2024-05-14
+ 64-bit arm_v:8-A locale=C.UTF-8 Threads:4 OPEN_MAX:1024
+
+Compiler:  ver:12.2.0 GCC 12.2.0 : UNALIGNED
+Linux : 6.12.20+rpt-rpi-v8 : #1 SMP PREEMPT Debian 1:6.12.20-1+rpt1~bpo12+1 (2025-03-19) : aarch64
+PageSize:4KB hwcap:887:CRC32:ASIMD
+LE 
+
+1T CPU Freq (MHz):  1787  1798  1797  1796  1616  1719  1794
+2T CPU Freq (MHz): 199% 1787   198% 1789  
+
+RAM size:    3791 MB,  # CPU hardware threads:   4
+RAM usage:    889 MB,  # Benchmark threads:      4
+
+                       Compressing  |                  Decompressing
+Dict     Speed Usage    R/U Rating  |      Speed Usage    R/U Rating
+         KiB/s     %   MIPS   MIPS  |      KiB/s     %   MIPS   MIPS
+
+22:       4783   342   1362   4653  |      89490   393   1945   7635
+23:       4373   344   1294   4456  |      88038   394   1931   7618
+24:       4497   359   1348   4836  |      86639   396   1919   7603
+25:       4383   363   1379   5004  |      83920   394   1897   7469
+----------------------------------  | ------------------------------
+Avr:      4509   352   1346   4738  |      87022   394   1923   7581
+Tot:             373   1635   6159
+

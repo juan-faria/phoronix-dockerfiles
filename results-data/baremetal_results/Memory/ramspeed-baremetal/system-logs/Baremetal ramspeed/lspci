@@ -1,0 +1,20 @@
+Slot:	00:00.0
+Class:	PCI bridge [0604]
+Vendor:	Broadcom Inc. and subsidiaries [14e4]
+Device:	BCM2711 PCIe Bridge [2711]
+Rev:	20
+ProgIf:	00
+Driver:	pcieport
+DTNode:	/sys/firmware/devicetree/base/scb/pcie@7d500000/pci@0,0
+
+Slot:	01:00.0
+Class:	USB controller [0c03]
+Vendor:	VIA Technologies, Inc. [1106]
+Device:	VL805/806 xHCI USB 3.0 Controller [3483]
+SVendor:	VIA Technologies, Inc. [1106]
+SDevice:	VL805/806 xHCI USB 3.0 Controller [3483]
+Rev:	01
+ProgIf:	30
+Driver:	xhci_hcd
+DTNode:	/sys/firmware/devicetree/base/scb/pcie@7d500000/pci@0,0/usb@0,0
+

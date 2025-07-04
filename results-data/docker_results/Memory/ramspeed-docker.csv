@@ -1,0 +1,19 @@
+2025-06-01-2010
+Docker testing on Debian GNU/Linux 12 via the Phoronix Test Suite.
+
+ ,,"2025-06-01 20:10"
+Processor,,ARMv8 Cortex-A72 @ 1.80GHz (4 Cores)
+Memory,,4096MB
+Disk,,64GB SC64G
+Graphics,,BCM2708
+OS,,Debian GNU/Linux 12
+Kernel,,6.12.20+rpt-rpi-v8 (aarch64)
+Compiler,,GCC 12.2.0
+File-System,,overlayfs
+Screen Resolution,,1920x1080
+System Layer,,Docker
+
+ ,,"2025-06-01 20:10"
+"RAMspeed SMP - Type: Average - Benchmark: Integer (MB/s)",HIB,3302.89
+"RAMspeed SMP - Type: Average - Benchmark: Floating Point (MB/s)",HIB,3498.54
+

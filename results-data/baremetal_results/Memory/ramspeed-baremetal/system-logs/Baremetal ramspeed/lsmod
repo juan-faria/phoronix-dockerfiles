@@ -1,0 +1,96 @@
+Module                  Size  Used by
+tun                    57344  2
+nf_conntrack_netlink    45056  0
+xt_nfacct              12288  4
+xt_nat                 12288  11
+veth                   32768  0
+nfnetlink_acct         16384  5 xt_nfacct
+nft_log                12288  1
+vxlan                 114688  0
+nft_limit              12288  1
+ip6_udp_tunnel         12288  1 vxlan
+udp_tunnel             24576  1 vxlan
+ipt_REJECT             12288  1
+nf_reject_ipv4         12288  1 ipt_REJECT
+xt_limit               12288  0
+xt_NFLOG               12288  0
+nfnetlink_log          20480  1
+xt_physdev             12288  2
+xt_mark                12288  8
+xt_tcpudp              12288  10
+xt_multiport           12288  3
+xt_comment             12288  118
+iptable_filter         12288  0
+iptable_nat            12288  0
+xt_conntrack           12288  19
+xt_MASQUERADE          12288  8
+xt_set                 20480  0
+ip_set                 49152  1 xt_set
+nft_chain_nat          12288  10
+nf_nat                 53248  4 xt_nat,nft_chain_nat,iptable_nat,xt_MASQUERADE
+nf_conntrack          147456  5 xt_conntrack,nf_nat,xt_nat,nf_conntrack_netlink,xt_MASQUERADE
+nf_defrag_ipv6         20480  1 nf_conntrack
+nf_defrag_ipv4         12288  1 nf_conntrack
+xt_addrtype            12288  11
+nft_compat             16384  195
+nf_tables             266240  697 nft_compat,nft_log,nft_chain_nat,nft_limit
+nfnetlink              20480  11 nft_compat,nfnetlink_acct,nf_conntrack_netlink,nf_tables,ip_set,nfnetlink_log
+xfrm_user              49152  1
+xfrm_algo              16384  1 xfrm_user
+joydev                 24576  0
+hid_apple              24576  0
+br_netfilter           32768  0
+bridge                270336  1 br_netfilter
+stp                    12288  1 bridge
+llc                    16384  2 bridge,stp
+overlay               143360  3
+cmac                   12288  3
+algif_hash             12288  1
+aes_arm64              12288  3
+aes_generic            32768  1 aes_arm64
+algif_skcipher         12288  1
+af_alg                 28672  6 algif_hash,algif_skcipher
+bnep                   24576  2
+brcmfmac_wcc           12288  0
+bcm2835_codec          45056  0
+bcm2835_v4l2           40960  0
+binfmt_misc            16384  1
+rpi_hevc_dec           45056  0
+bcm2835_isp            28672  0
+brcmfmac              360448  1 brcmfmac_wcc
+bcm2835_mmal_vchiq     36864  3 bcm2835_codec,bcm2835_v4l2,bcm2835_isp
+hci_uart               49152  0
+vc_sm_cma              28672  2 bcm2835_mmal_vchiq,bcm2835_isp
+v4l2_mem2mem           45056  2 bcm2835_codec,rpi_hevc_dec
+videobuf2_vmalloc      12288  1 bcm2835_v4l2
+videobuf2_dma_contig    20480  3 bcm2835_codec,rpi_hevc_dec,bcm2835_isp
+btbcm                  24576  1 hci_uart
+bluetooth             614400  26 hci_uart,btbcm,bnep
+brcmutil               24576  1 brcmfmac
+cfg80211             1003520  1 brcmfmac
+videobuf2_memops       12288  2 videobuf2_vmalloc,videobuf2_dma_contig
+videobuf2_v4l2         32768  5 bcm2835_codec,rpi_hevc_dec,bcm2835_v4l2,v4l2_mem2mem,bcm2835_isp
+ecdh_generic           16384  2 bluetooth
+videodev              311296  6 bcm2835_codec,rpi_hevc_dec,videobuf2_v4l2,bcm2835_v4l2,v4l2_mem2mem,bcm2835_isp
+ecc                    36864  1 ecdh_generic
+snd_bcm2835            24576  0
+snd_pcm               143360  1 snd_bcm2835
+rfkill                 32768  6 bluetooth,cfg80211
+libaes                 12288  3 aes_arm64,bluetooth,aes_generic
+snd_timer              36864  1 snd_pcm
+videobuf2_common       73728  9 bcm2835_codec,videobuf2_vmalloc,rpi_hevc_dec,videobuf2_dma_contig,videobuf2_v4l2,bcm2835_v4l2,v4l2_mem2mem,videobuf2_memops,bcm2835_isp
+mc                     61440  7 videodev,bcm2835_codec,rpi_hevc_dec,videobuf2_v4l2,videobuf2_common,v4l2_mem2mem,bcm2835_isp
+snd                   110592  3 snd_bcm2835,snd_timer,snd_pcm
+raspberrypi_gpiomem    12288  0
+raspberrypi_hwmon      12288  0
+nvmem_rmem             12288  0
+drm                   647168  0
+fuse                  163840  1
+dm_mod                143360  0
+drm_panel_orientation_quirks    28672  1 drm
+backlight              24576  1 drm
+ip_tables              32768  2 iptable_filter,iptable_nat
+x_tables               49152  18 xt_conntrack,iptable_filter,nft_compat,xt_multiport,xt_NFLOG,xt_tcpudp,xt_addrtype,xt_physdev,xt_nat,xt_comment,xt_set,ipt_REJECT,xt_nfacct,ip_tables,iptable_nat,xt_limit,xt_MASQUERADE,xt_mark
+ipv6                  569344  48 bridge,br_netfilter
+uio_pdrv_genirq        12288  0
+uio                    20480  1 uio_pdrv_genirq

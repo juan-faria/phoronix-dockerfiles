@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>2025-06-16-0025</Title>
+    <LastModified>2025-06-16 08:04:18</LastModified>
+    <TestClient>Phoronix Test Suite v10.8.5</TestClient>
+    <Description>Docker testing on Debian GNU/Linux 12 via the Phoronix Test Suite.</Description>
+    <Notes></Notes>
+    <InternalTags></InternalTags>
+    <ReferenceID></ReferenceID>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>SC64G</Identifier>
+    <Hardware>Processor: ARMv8 Cortex-A72 @ 1.80GHz (4 Cores), Memory: 4096MB, Disk: 64GB SC64G, Graphics: BCM2708</Hardware>
+    <Software>OS: Debian GNU/Linux 12, Kernel: 6.12.20+rpt-rpi-v8 (aarch64), Compiler: GCC 12.2.0, File-System: overlayfs, Screen Resolution: 1920x1080, System Layer: Docker</Software>
+    <User>root</User>
+    <TimeStamp>2025-06-16 00:25:28</TimeStamp>
+    <TestClientVersion>10.8.5</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=aarch64-linux-gnu --disable-libquadmath --disable-libquadmath-support --disable-werror --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-fix-cortex-a53-843419 --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --enable-libphobos-checking=release --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-nls --enable-objc-gc=auto --enable-plugin --enable-shared --enable-threads=posix --host=aarch64-linux-gnu --program-prefix=aarch64-linux-gnu- --target=aarch64-linux-gnu --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-target-system-zlib=auto -v","cpu-scaling-governor":"cpufreq-dt ondemand","kernel-parameters":"snd_bcm2835.enable_headphones=0 snd_bcm2835.enable_headphones=1 snd_bcm2835.enable_hdmi=1 cfg80211.ieee80211_regdom=GB","security":"gather_data_sampling: Not affected + itlb_multihit: Not affected + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Not affected + reg_file_data_sampling: Not affected + retbleed: Not affected + spec_rstack_overflow: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of __user pointer sanitization + spectre_v2: Vulnerable + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/iozone-1.9.6</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.465</AppVersion>
+    <Arguments>-r 2m -s 512M -i0 -i1 #READ</Arguments>
+    <Description>Record Size: 2MB - File Size: 512MB - Disk Test: Read Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>SC64G</Identifier>
+        <Value>1222.26</Value>
+        <RawString>1249.08984375:1224.513671875:1380.5009765625:1212.7294921875:1203.5185546875:1291.8583984375:1185.0556640625:1186.7724609375:1215.8740234375:1180.7919921875:1211.8857421875:1215.6171875:1199.119140625:1184.916015625:1191.6416015625</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"71.55:71.23:64.20:41.66:41.68:41.76:44.98:41.73:41.98:41.70:43.57:44.77:41.81:41.83:41.75"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.9.6</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.465</AppVersion>
+    <Arguments>-r 4k -s 512M -i0 -i1 #READ</Arguments>
+    <Description>Record Size: 4Kb - File Size: 512MB - Disk Test: Read Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>SC64G</Identifier>
+        <Value>1269.23</Value>
+        <RawString>1344.5908203125:1168.212890625:1260.1337890625:1245.236328125:1316.6015625:1399.6142578125:1244.5703125:1246.171875:1197.9091796875</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"2287.84:2308.50:2310.51:2331.25:2333.56:2515.51:2433.68:2261.86:2280.35"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.9.6</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.465</AppVersion>
+    <Arguments>-r 2m -s 512M -i0 #WRITE</Arguments>
+    <Description>Record Size: 2MB - File Size: 512MB - Disk Test: Write Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>SC64G</Identifier>
+        <Value>22.99</Value>
+        <RawString>22.521484375:22.9208984375:20.7978515625:19.578125:22.7685546875:23.5224609375:23.53125:23.283203125:23.3115234375:23.5947265625:23.5693359375:24.595703125:23.8857421875:23.6103515625:23.2998046875</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"42.72:42.25:44.51:46.17:42.73:42.42:42.16:42.39:42.32:42.24:41.95:43.16:42.01:42.11:42.34"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.9.6</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.465</AppVersion>
+    <Arguments>-r 4k -s 512M -i0 #WRITE</Arguments>
+    <Description>Record Size: 4Kb - File Size: 512MB - Disk Test: Write Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>SC64G</Identifier>
+        <Value>0.567057292</Value>
+        <RawString>0.568359375:0.564453125:0.568359375</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"1633.20:1638.90:1638.77"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>
